@@ -3,10 +3,10 @@ FS-AI ADS-DV User Manual
 Version	Date	Changes
 1.0	2026-03-XX	First issue of document.
 
+NOTE: The master copy of this document is stored at [https://github.com/FS-AI/FS-AI_ADS-DV_Documentation]. Always check you have the latest version as printed copies, PDFs, downloads or repository clones may be out of date.
+
 
 ToDo: Inertia Switch
-
-NOTE: The master copy of this document is stored at [URL]. Always check you have the latest version as printed copies, PDFs, downloads or clones may be out of date.
 
 
 Table of Contents
@@ -44,7 +44,6 @@ The Key Equipment for operating the ADS-DV consists of:
 •	ADS-DV
 •	Remote Emergency Stop (RES)
 •	Switch Keys (x3)
-•	AI Power Switch Key
 •	MPP Dongle
 •	MPP Joystick
 •	Datalogger Memory Card
@@ -70,11 +69,11 @@ Remote Emergency Stop (RES)
 
 Side Emergency Stop Buttons (x2)
 
-AI Power Switch & AI Power Switch Key
+AI Power Switch
 
 Multi-Purpose Port (MPP) & MPP Dongle
 
-Charge Port
+Charger Port
 
 TSAL LED Indicators
 
@@ -89,7 +88,7 @@ Before operating the ADS-DV it must be inspected for any damage or anomaly by a 
 
 The exact inspection schedule and level of detail depends upon how long the vehicle has been in storage.
 
-(Inspection Schedule to follow)
+Refer to the document 'FS-AI ADS-DV Inspection Schedule' available at [https://github.com/FS-AI/FS-AI_ADS-DV_Documentation] for full details.
 
 
 5.	Preparation for Operation
@@ -110,7 +109,7 @@ The exact inspection schedule and level of detail depends upon how long the vehi
 
 NOTE: The RES Red LED will flash if the RES Battery is low on charge. It may also emit an audible tone. If this occurs, swap the RES Battery for a charged one and recharge the flat one using the provided RES Battery Charger.
 
-6.	Verify the Side Emergency Stop Switches are ‘Out’. (If not, twist them so they pop out).
+6.	Verify the Side Emergency Stop Switches are ‘Out’. (If not, twist them clockwise so they pop out).
 7.	Turn ‘On’ the LV Master Switch.
 8.	Verify the TSAL indicator LEDs show Green.
 9.	Verify the Touch Screen Interface starts up.
@@ -155,7 +154,6 @@ NOTE: Currently the software interface is unchanged from previous years and the 
 •	MPP Dongle
 •	Remote Emergency Stop (RES)
 •	Switch Keys (x3)
-•	AI Power Switch Key
 •	Datalogger Memory Card
 •	Compute Platform
 
@@ -164,7 +162,7 @@ NOTE: The Compute Platform refers to any hardware used to send CAN signals to th
 6.2.	Procedure
 1.	Verify the ADS-DV is ready according to 'Inspection' and ‘Preparation for Operation’ above.
 2.	Verify the Compute Platform is connected to one of the AI Power & CAN connectors of the ADS-DV.
-3.	Insert the AI Power Switch Key and turn on the AI Power Switch (or confirm it is already on), to supply power to the Compute Platform.
+3.	Turn on the AI Power Switch (or confirm it is already on), to supply power to the Compute Platform.
 
 (Photos to be added)
 
@@ -189,7 +187,7 @@ NOTE: If the Emergency Brake System has been completely discharged for storage, 
 
 (Photo to be added)
 
-10.	Insert the Datalogger Memory Card (or confirm insertion), if required.
+10.	Insert the Datalogger Memory Card (or confirm insertion) and verify that the two LEDs are both showing Green.
 
 (Photo to be added)
 
@@ -211,9 +209,10 @@ NOTE: The Autonomous State Machine CAN signal requirements are fully documented 
 
 (Photo to be added)
 
-15.	Conduct the Mission by correctly controlling the ADS-DV using the CAN signals.
+15.	The Compute Platform should conduct the Mission by correctly controlling the ADS-DV using the CAN signals.
 
 NOTE: The ADS-DV MUST be observed at all times by the ASR. The Remote Emergency Stop MUST be used if the ADS-DV shows any anomalous behaviour.
+
 NOTE: Full details on ADS-DV Operational Safety, for both Static and Dynamic operation, are documented separately.
 
 16. Regardless of the success or failure of the Mission (resulting in either ‘AS Finished’ or ‘Emergency Brake’) the ADS-DV must be reset after every Mission by turning ‘Off’ the LV Master Switch, AS Master Switch and TS Master Switch.
@@ -243,7 +242,7 @@ The ADS-DV should be prepared for storage any time it is left unattended.
 1.	Remove the AS Master Switch and Traction System Master Switch keys (if present) and store securely.
 2.	Remove the Datalogger Memory Card (if present) and store securely.
 3.	Connect the MPP Dongle to the MPP.
-4.	Verify the AI Power Switch is switched ‘Off’, remove the AI Master Switch Key (if present) and store securely.
+4.	Verify the AI Power Switch is switched ‘Off’.
 
 NOTE: Ensure the AI Power Switch is switched ‘Off’ even if no Compute Platform is installed.
 
@@ -253,7 +252,7 @@ NOTE: Ensure the AI Power Switch is switched ‘Off’ even if no Compute Platfo
 
 NOTE: The RES Red LED will flash if the battery is low on charge. It may also emit an audible tone. If this occurs, swap the RES battery for a charged one and recharge the flat one.
 
-8.	Verify the Side Emergency Stop Switches are ‘Out’. (If not, twist them so they pop out).
+8.	Verify the Side Emergency Stop Switches are ‘Out’. (If not, twist them clockwise until they pop out).
 9.	Turn ‘On’ the LV Master Switch.
 10.	Verify the TSAL indicator LEDs show Green.
 11.	Verify the Touch Screen Interface starts up.
@@ -265,8 +264,9 @@ NOTE: To complete the E-Stop Loop all the following need to be correct:
 •	MPP Dongle present
 •	Inertia Switch ‘Closed’
 
-13.	Verify the Traction Battery voltage is above 47.5V. If it is lower than this, charge the Traction Battery to at least 50.0V according to the procedure below.
-15.	On the Touch Screen, switch to the ‘Service’ page and press the ‘Brake Discharge’ button. Ensure the button shows pressed.
+13.	Verify the LV Battery voltage is above 13.5V, indicating the DCDC converter is working. Typically, this will show 13.6V, but may fluctuate slightly.
+14.	Verify the Traction Battery voltage is above 47.5V. If it is lower than this, charge the Traction Battery to at least 50.0V according to the procedure below.
+15.	On the Touch Screen, switch to the ‘Service’ page and press the ‘Brake Discharge’ switch. Ensure the switch shows 'On'.
 
 (Photo to be added)
 
@@ -312,7 +312,7 @@ NOTE: Ensure the Traction Battery Charger Output Connector is fully engaged and 
 
 NOTE: The RES Red LED will flash if the battery is low on charge. It may also emit an audible tone. If this occurs, swap the RES battery for a charged one and recharge the flat one.
 
-7.	Verify the Side Emergency Stop Switches are ‘Out’. (If not, twist them so they pop out).
+7.	Verify the Side Emergency Stop Switches are ‘Out’. (If not, twist them clockwise until they pop out).
 8.	Turn ‘On’ the LV Master Switch.
 9.	Verify the TSAL indicator LEDs show Green.
 10.	Verify the Touch Screen Interface starts up.
@@ -325,7 +325,7 @@ NOTE: To complete the E-Stop Loop all the following need to be correct:
 •	Inertia Switch ‘Closed’
 
 12.	Verify the LV Battery voltage is above 13.5V, indicating the DCDC converter is working. Typically, this will show 13.6V, but may fluctuate slightly.
-13.	On the Touch Screen, switch to the ‘Service’ page and press the ‘Charge Enable’ button. Ensure the button shows pressed.
+13.	On the Touch Screen, switch to the ‘Service’ page and press the ‘Charge Enable’ switch. Ensure the switch shows 'On'.
 
 (Photos to be added)
 
