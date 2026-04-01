@@ -91,13 +91,13 @@ Refer to [FS-AI ADS-DV Inspection Schedule](./FS-AI%20ADS-DV%20Inspection%20Sche
 
 1. Verify the AI Power Switch is switched "Off".
 2. Connect the MPP Dongle to the MPP.
-3. Ensure the RES has a charged RES Battery installed.
+3. Ensure the RES has a charged battery installed.
 4. Enable the RES by twisting the RES Emergency Stop button until it pops up.
 5. Verify the RES is active by observing the Red LED is lit.
 
    *Photo to be added.*
 
-   **Note:** The RES Red LED will flash if the RES Battery is low on charge. It may also emit an audible tone. If this occurs, swap the RES Battery for a charged one and recharge the flat one using the provided RES Battery Charger.
+   **Note:** The RES Red LED will flash if the battery is low on charge. It may also emit an audible tone. If this occurs, fit a charged battery and recharge the flat battery using the provided RES Battery Charger.
 
 6. Verify the Side Emergency Stop Switches are "Out". If not, twist them clockwise so they pop out.
 7. Turn "On" the LV Master Switch.
@@ -112,9 +112,9 @@ Refer to [FS-AI ADS-DV Inspection Schedule](./FS-AI%20ADS-DV%20Inspection%20Sche
     - RES active
     - Side Emergency Stop Switches "Out"
     - MPP Dongle present
-    - Inertia Switch "Closed"
+    - Inertia Switch "Closed" (see [Section 9](#9-checking-and-resetting-the-inertia-switch))
 
-11. Verify the LV Battery voltage is above 13.5V, indicating the DCDC converter is working. Typically, this will show 13.6V, but may fluctuate slightly.
+11. Verify the LV Battery voltage is above 13.5V, indicating the DCDC converter is working. Typically, this will read between 13.5V and 14.5V.
 
     **Note:** If the LV Battery voltage remains below 13.0V, turn off the LV Master Switch and contact FS-AI Technical Support.
 
@@ -229,7 +229,6 @@ The ADS-DV should be prepared for storage any time it is left unattended.
 - MPP Dongle
 - Remote Emergency Stop (RES)
 - Switch Keys (x1)
-- Datalogger Memory Card
 
 ### 7.2. Procedure
 
@@ -244,7 +243,7 @@ The ADS-DV should be prepared for storage any time it is left unattended.
 6. Enable the RES by twisting the Emergency Stop button until it pops up.
 7. Verify the RES is active by observing the Red LED is lit.
 
-   **Note:** The RES Red LED will flash if the battery is low on charge. It may also emit an audible tone. If this occurs, swap the RES battery for a charged one and recharge the flat one.
+   **Note:** The RES Red LED will flash if the battery is low on charge. It may also emit an audible tone. If this occurs, fit a charged battery and recharge the flat battery using the provided RES Battery Charger.
 
 8. Verify the Side Emergency Stop Switches are "Out". If not, twist them clockwise until they pop out.
 9. Turn "On" the LV Master Switch.
@@ -257,10 +256,13 @@ The ADS-DV should be prepared for storage any time it is left unattended.
     - RES active
     - Side Emergency Stop Switches "Out"
     - MPP Dongle present
-    - Inertia Switch "Closed"
+    - Inertia Switch "Closed" (see [Section 9](#9-checking-and-resetting-the-inertia-switch))
 
-13. Verify the LV Battery voltage is above 13.5V, indicating the DCDC converter is working. Typically, this will show 13.6V, but may fluctuate slightly.
-14. Verify the Traction Battery voltage is above 47.5V. If it is lower than this, charge the Traction Battery to at least 50.0V according to the procedure below.
+13. Verify the LV Battery voltage is above 13.5V, indicating the DCDC converter is working. Typically, this will read between 13.5V and 14.5V.
+
+    **Note:** If the LV Battery voltage remains below 13.0V, turn off the LV Master Switch and contact FS-AI Technical Support.
+
+14. Verify the Traction Battery voltage is above 50.0V. If it is lower than this, charge the Traction Battery to at least 50.0V according to the procedure below.
 15. On the Touch Screen, switch to the "Service" page and press the "Brake Discharge" switch. Ensure the switch shows "On".
 
     *Photo to be added.*
@@ -271,7 +273,7 @@ The ADS-DV should be prepared for storage any time it is left unattended.
 
 17. Turn "Off" the LV Master Switch, remove the Switch Key, and store securely.
 18. Turn "Off" the RES by pressing in the Emergency Stop button and observing the Red LED is unlit.
-19. Store the RES securely and recharge the RES Battery if required.
+19. Store the RES securely and recharge the battery if required.
 20. Remove the MPP Dongle and store securely.
 
     **Note:** During storage the brake lines remain locked-off by a normally closed valve. Thus, a variation in temperature or ambient pressure may result in the wheels re-locking. If this occurs the residual brake line pressure is still very low compared to the deployed EBS pressure.
@@ -279,7 +281,7 @@ The ADS-DV should be prepared for storage any time it is left unattended.
 
 ## 8. Charging the Traction Battery
 
-> Note: The Traction Battery MUST be recharged if the voltage displayed on the Touch Screen is below 47.5V with the ADS-DV idle, or in preparation for storage.
+> Note: The Traction Battery MUST be recharged if the voltage displayed on the Touch Screen is below 47.5V with the ADS-DV idle, or is below 50.0V when preparing for storage.
 
 ### 8.1. Equipment Required
 
@@ -307,7 +309,7 @@ The ADS-DV should be prepared for storage any time it is left unattended.
 5. Enable the RES by twisting the Emergency Stop button until it pops up.
 6. Verify the RES is active by observing the Red LED is lit.
 
-   **Note:** The RES Red LED will flash if the battery is low on charge. It may also emit an audible tone. If this occurs, swap the RES battery for a charged one and recharge the flat one.
+   **Note:** The RES Red LED will flash if the battery is low on charge. It may also emit an audible tone. If this occurs, fit a charged battery and recharge the flat battery using the provided RES Battery Charger.
 
 7. Verify the Side Emergency Stop Switches are "Out". If not, twist them clockwise until they pop out.
 8. Turn "On" the LV Master Switch.
@@ -320,9 +322,12 @@ The ADS-DV should be prepared for storage any time it is left unattended.
     - RES active
     - Side Emergency Stop Switches "Out"
     - MPP Dongle present
-    - Inertia Switch "Closed"
+    - Inertia Switch "Closed" (see [Section 9](#9-checking-and-resetting-the-inertia-switch))
 
-12. Verify the LV Battery voltage is above 13.5V, indicating the DCDC converter is working. Typically, this will show 13.6V, but may fluctuate slightly.
+12. Verify the LV Battery voltage is above 13.5V, indicating the DCDC converter is working. Typically, this will read between 13.5V and 14.5V.
+
+    **Note:** If the LV Battery voltage remains below 13.0V, turn off the LV Master Switch and contact FS-AI Technical Support.
+
 13. On the Touch Screen, switch to the "Service" page and press the "Charge Enable" switch. Ensure the switch shows "On".
 
     *Photos to be added.*

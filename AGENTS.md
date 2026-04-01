@@ -6,7 +6,7 @@ This repository is a documentation-only workspace for the FS-AI ADS-DV project. 
 
 - There is no application code, build system, or test suite in this repository.
 - `README.md` currently contains a migration notice and a documentation index for the Markdown set.
-- `FS-AI ADS-DV User Manual.md` is a draft user-facing operating document.
+- `FS-AI ADS-DV User Manual.md` is the main draft user-facing operating document and has received the most active Markdown clean-up in this editing pass.
 - `FS-AI ADS-DV Software Interface Specification.md` is the main technical interface document.
 - `FS-AI ADS-DV Operational Safety.md` is a substantial draft safety document with a mix of new front matter and older migrated loan/safety content.
 - `FS-AI ADS-DV Specifications & Dimensions.md` is a draft hardware summary document.
@@ -22,7 +22,7 @@ This repository is a documentation-only workspace for the FS-AI ADS-DV project. 
 ## Document Status
 
 - `FS-AI ADS-DV Software Interface Specification.md` remains one of the most developed files. It covers CAN_B messages, handshake/comms-loss behaviour, autonomous state transitions, and fault conditions, but still references an external `.dbc` file.
-- `FS-AI ADS-DV User Manual.md` is a populated draft with Document Control front matter and reformatted Markdown structure, but it still contains publication placeholders, image placeholders, and incomplete procedural detail in some sections.
+- `FS-AI ADS-DV User Manual.md` is a populated draft with Document Control front matter and reformatted Markdown structure. It now distinguishes between the traction battery threshold for operation (`47.5V`) and the higher threshold used when preparing for storage (`50.0V`), and it treats the RES battery as part of the RES except where battery charging is described explicitly. It still contains publication placeholders, image placeholders, and incomplete procedural detail in some sections.
 - `FS-AI ADS-DV Operational Safety.md` is materially populated, but it includes placeholder publication metadata, migration notes, and legacy copied text that should be normalised during editing.
 - `FS-AI ADS-DV Specifications & Dimensions.md` contains starter technical content and Document Control front matter, but still includes unresolved placeholders such as `2026-03-XX` and `XXX Lead Acid`.
 - `FS-AI ADS-DV Inspection Schedule.md` is still an early draft, but it now includes Document Control front matter plus migrated storage, 12V battery, and mechanical-check guidance; its structure and at least one internal cross-reference should be reviewed before release.
@@ -44,6 +44,7 @@ This repository is a documentation-only workspace for the FS-AI ADS-DV project. 
 - Keep documentation in Markdown.
 - Where a document includes a `## Document Control` section, keep the title, aligned table formatting, and master-copy note consistent.
 - Maintain consistency in terminology across documents, especially for subsystem names, safety states, operational steps, inspection names, and scrutineering terminology.
+- In operator-facing text, treat the RES battery as part of the RES unless the battery itself is being charged or otherwise handled explicitly.
 - Avoid inventing technical values, procedures, or safety requirements; leave gaps explicit until they are confirmed.
 - Replace placeholder dates, URLs, TODO markers, and migration notes before treating a document as publishable.
 - When editing an existing document, follow its current style unless there is an intentional clean-up pass. Some files use plain-text titles and section lists rather than strict Markdown headings.
@@ -55,6 +56,7 @@ This repository is a documentation-only workspace for the FS-AI ADS-DV project. 
 - Check that the `README.md` documentation index stays aligned with the actual repository file set.
 - Normalise repeated publication boilerplate across the Markdown documents where appropriate.
 - Resolve or clearly retain placeholders such as `2026-03-XX`, `TBD`, `XXX Lead Acid`, image placeholders, and references to external legacy PDFs.
+- Where procedures are repeated across sections, compare them explicitly for drift before committing changes.
 - Review migrated text for stale year references, copied-source notes, and formatting/encoding artefacts before reusing it elsewhere.
 - Confirm whether placeholder-only files should be expanded in the session or remain explicitly incomplete.
 - Before committing documentation changes, check for stale cross-references, missing assets, and unresolved placeholders.
