@@ -1,21 +1,23 @@
-CAN Interface Specification
-Handshaking
-Speed Mode
-Torque Mode
+# FS-AI ADS-DV Software Interface Specification
 
 
+## Document Control
 
-ADS-Dv Software Interface Specification
+| Version | Date        | Changes                                                         |
+| ------- | ----------- | --------------------------------------------------------------- |
+| 4.0     | 25 Jun 2021 | Current issue. See [Change Log](#change-log) below for full revision history. |
 
-Version 4.0
+> The master copy of this document is stored at [FS-AI/FS-AI_ADS-DV_Documentation](https://github.com/FS-AI/FS-AI_ADS-DV_Documentation).<br>
+> Always check you have the latest version, as printed copies, PDFs, downloads, or repository clones may be out of date.
 
-# Introduction
+
+## Introduction
 
 This document lists the signals on the CAN_B bus of the Formula Student ADS-DV demonstrator vehicle that is used for communications between the AI Computer and the Vehicle Control Unit (VCU), and the autonomous driving state machine that complies with the Formula Student Rules. It should be used in combination with the CAN database (ADSDV_2021_VCU_AI_interface_v2.dbc). The CAN_B bus uses the CAN 2.0B protocol and runs at a baud rate of 500 kbit/s.
 
 This CAN interface has been designed to comply with the 2019 Formula Student Rules for driverless vehicles and the supplementary regulations for the 2018 Formula Student Germany (FSG) competition, which provide more detailed guidelines on the data that must be logged for driverless vehicles. Any signals that are only relevant to the FSG data logging rules are highlighted accordingly.
 
-## Glossary of Terms
+### Glossary of Terms
 
 | ADS-DV | Autonomous Driving System - Dedicated Vehicle |
 | --- | --- |
@@ -33,7 +35,7 @@ This CAN interface has been designed to comply with the 2019 Formula Student Rul
 | TSMS | Tractive System Master Switch |
 | VCU | Vehicle Control Unit |
 
-## Change Log
+### Change Log
 
 | Version | Date | Changes made |
 | --- | --- | --- |
@@ -42,9 +44,11 @@ This CAN interface has been designed to comply with the 2019 Formula Student Rul
 | 3.0 | 27 Jan 2021 | Friction braking messages (AI2VCU_Brake and VCU2AI_Brake) updated to allow independent variation of brake pressure requests for the front and rear axles,<br><br>steering angle limits revised to ±24.0°,<br><br>battery charging procedure and BMS faults added to VCU2AI_Status fault diagnostics,<br><br>AMI_STATE enumerations updated to include new 'Static inspection A', 'Static inspection B' and 'Autonomous demo' missions for scrutineering,<br><br>Unused VCU diagnostics messages removed,<br><br>List of reserved CAN IDs updated. |
 | 4.0 | 25 Jun 2021 | CAN specifications updated to included altered message DLC values and transmission rates,<br><br>VCU_STATUS message added to CAN specification,<br><br>handshake and CAN message timeout error information updated,<br><br>list of fault conditions in autonomous driving mode added,<br><br>list of reserved CAN IDs updated. |
 
-# CAN Messages
 
-## AI Computer Messages
+
+## CAN Messages
+
+### AI Computer Messages
 
 | Message name | AI2LOG_Dynamics2 |     |     |
 | --- | --- |     |     | --- |
@@ -113,7 +117,7 @@ This CAN interface has been designed to comply with the 2019 Formula Student Rul
 | HYD_PRESS_F_REQ_pct |     | Unsigned | Normalised hydraulic pressure request for the front axle friction brakes.  <br>Range: \[0, 100\] |
 | HYD_PRESS_R_REQ_pct |     | Unsigned | Normalised hydraulic pressure request for the rear axle friction brakes.  <br>Range: \[0, 100\] |
 
-## Vehicle Control UNIT (VCU) Messages
+### Vehicle Control UNIT (VCU) Messages
 
 | Message name | VCU2LOG_Dynamics1 |     |     |
 | --- | --- |     |     | --- |
@@ -269,7 +273,7 @@ This CAN interface has been designed to comply with the 2019 Formula Student Rul
 | WARN_AUTO_BRAKING |     | Bit | Warning flag for the autonomous braking fault |
 | WARN_MISSION_STATUS |     | Bit | Warning flag for the mission status fault |
 
-## Reserved CAN Addresses
+### Reserved CAN Addresses
 
 The AI Computer must not transmit any data using the following CAN IDs:
 
@@ -283,7 +287,7 @@ The AI Computer must not transmit any data using the following CAN IDs:
 | 410h to 41Fh inclusive | 700h to 705h inclusive |
 | 450h to 470h inclusive |     |
 
-## Handshake and Communications Loss
+### Handshake and Communications Loss
 
 A handshake must be performed between the VCU and the AI Computer when the tractive system is enabled to allow autonomous driving. The handshake bits are located in the first bytes of the AI2VCU_Status (510h) and VCU2AI_Status (520h) messages.
 
@@ -296,14 +300,16 @@ The VCU also checks that the AI Computer is regularly sending the five 'AI2VCU' 
 
 Figure : VCU-AI handshake and comms fault detection
 
-# Autonomous System State Machine
+
+
+## Autonomous System State Machine
 
 Figure 2 shows the autonomous driving state machine implemented in the VCU in accordance with the Formula Student Rules. Any numbering on state transitions relates to the order in which the conditions are evaluated.
 
 
 Figure 2: Autonomous driving state machine
 
-## AS_OFF to AS_READY
+### AS_OFF to AS_READY
 
 The autonomous driving state machine will transition from AS_OFF to AS_READY when all the following conditions are satisfied:
 
@@ -314,7 +320,7 @@ The autonomous driving state machine will transition from AS_OFF to AS_READY whe
 
 The selected autonomous mission will be transmitted from the VCU in the 'AMI_STATE' CAN signal ('VCU2AI_Status' message, 520h). The AI software should then update the 'MISSION_STATUS' signal ('AI2VCU_Status' message, 510h) to the SELECTED state (signal value of 1) to confirm the mission selection.
 
-## AS_READY to AS_DRIVING
+### AS_READY to AS_DRIVING
 
 When the AS_READY state is active in the autonomous driving state machine, all powertrain components will have been initialised and be ready to act on the commands received from the AI Computer. At this point the VCU will not respond to drive or steering requests from the AI Computer to avoid any unintended motion of the vehicle. The transition from AS_READY to AS_DRIVING will be as follows:
 
@@ -328,18 +334,18 @@ The intention is that the direction request is set to FORWARD when in the AS_DRI
 
 - Once the above conditions have been satisfied, the VCU will monitor the remote "Go" signal from the GrossFunk RES transmitter to detect a rising edge. If the switch for the "Go" signal is in the 'on' position while in AS_READY, it must be turned off and on again before the VCU will enter the AS_DRIVING state. Once the rising edge has been detected, the CAN signal 'RES_GO_SIGNAL' ('VCU2AI_Status' message, 520h) is set to TRUE and transmitted to the AI Computer. The state machine will then transition to the AS_DRIVING state.
 
-## AS_DRIVING to AS_FINISHED
+### AS_DRIVING to AS_FINISHED
 
 - The AI Computer must inform the VCU when the selected autonomous mission has been completed in accordance with the rules for the driverless dynamic events. The AI software is responsible for bringing the vehicle to a stop at the end of each event by applying the service brake.
 - Once the vehicle has stopped, the AI Computer must set the value of the CAN signal 'MISSION_STATUS' ('AI2VCU_Status' message, 510h) to FINISHED (signal value of 3).
 - When the VCU sees that the autonomous mission has been completed and the vehicle has come to rest, the autonomous driving state changes from AS_DRIVING to AS_FINISHED.
 - Upon entering the AS_FINISHED state, any commands for the drive or steering motors from the AI Computer will be ignored.
 
-## AS_FINISHED to AS_OFF
+### AS_FINISHED to AS_OFF
 
 The VCU state machine will return to the AS_OFF state when the ASMS is turned off.
 
-## AS_READY to EMERGENCY_BRAKE
+### AS_READY to EMERGENCY_BRAKE
 
 The VCU state machine will enter the EMERGENCY_BRAKE state from AS_READY if the shutdown circuit (SDC) is broken, which could be caused by any of the following:
 
@@ -351,11 +357,11 @@ The VCU state machine will enter the EMERGENCY_BRAKE state from AS_READY if the 
 - The BMS detects a critical fault in the traction battery pack,
 - The autonomous driving dongle is removed from the vehicle's Multi-Purpose Port (MPP).
 
-## AS_READY to AS_OFF
+### AS_READY to AS_OFF
 
 The VCU state machine will return to the AS_OFF state if the ASMS is turned off.
 
-## AS_DRIVING to EMERGENCY_BRAKE
+### AS_DRIVING to EMERGENCY_BRAKE
 
 The VCU will enter the EMERGENCY_BRAKE state if any of the following criteria are satisfied:
 
@@ -364,15 +370,17 @@ The VCU will enter the EMERGENCY_BRAKE state if any of the following criteria ar
 - The AS master switch is turned off,
 - An autonomous driving fault condition is detected (see section 4).
 
-## AS_FINISHED to EMERGENCY_BRAKE
+### AS_FINISHED to EMERGENCY_BRAKE
 
 The emergency stop procedure will be activated if the shutdown circuit is broken while the VCU state machine is in the AS_FINISHED state.
 
-## EMERGENCY_BRAKE to AS_OFF
+### EMERGENCY_BRAKE to AS_OFF
 
 Once the 15 second timer for the emergency braking procedure has elapsed, the state machine will return to AS_OFF when the ASMS is turned off. A power cycle of the vehicle will be required to return to a state where the vehicle can be driven again.
 
-# Fault conditions
+
+
+## Fault conditions
 
 The following is a list of operating conditions that are not permissible when the ADS-DV is in its autonomous driving state (AS_DRIVING). If any of these conditions are met, the VCU will execute an emergency stop to bring the vehicle to a halt.
 

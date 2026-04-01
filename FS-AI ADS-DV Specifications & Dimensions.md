@@ -1,16 +1,17 @@
-FS-AI ADS-DV Specifications & Dimensions
-
-Version	Date	Changes
-1.0	2026-03-XX	First issue of document.
+# FS-AI ADS-DV Specifications & Dimensions
 
 
-NOTE: The master copy of this document is stored at [URL]. Always check you have the latest version as printed copies, PDFs, downloads or clones may be out of date.
+## Document Control
+
+| Version | Date       | Changes                  |
+| ------- | ---------- | ------------------------ |
+| 1.0     | 2026-03-XX | First issue of document. |
+
+> The master copy of this document is stored at [FS-AI/FS-AI_ADS-DV_Documentation](https://github.com/FS-AI/FS-AI_ADS-DV_Documentation).<br>
+> Always check you have the latest version, as printed copies, PDFs, downloads, or repository clones may be out of date.
 
 
-
-
-
-Table of Contents
+## Table of Contents
 
 
 
