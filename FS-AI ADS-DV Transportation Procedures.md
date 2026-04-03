@@ -5,7 +5,7 @@
 
 | Version | Date       | Changes                                                                           |
 | ------- | ---------- | --------------------------------------------------------------------------------- |
-| TBD     | 2026-04-02 | Audited copied transport content against current user manual and safety guidance. |
+| TBD     | 2026-04-02 | Normalised Quick Lift Jack casing.                               |
 
 > The master copy of this document is stored at [FS-AI/FS-AI_ADS-DV_Documentation](https://github.com/FS-AI/FS-AI_ADS-DV_Documentation).<br>
 > Always check you have the latest version, as printed copies, PDFs, downloads, or repository clones may be out of date.
@@ -52,7 +52,7 @@ The following equipment and accessories must accompany the ADS-DV during transpo
 
   *Photo to be added.*
 
-- Quick Lift jack.
+- Quick Lift Jack.
 
   *Photo to be added.*
 
@@ -90,7 +90,7 @@ The transport document does not duplicate the full step-by-step storage procedur
 
 ### 3.2. Physical Preparation
 
-The ADS-DV must only be lifted using the Quick Lift jack on the underside of the chassis. The bodywork, including the nosecone, and the suspension must not be used for lifting.
+The ADS-DV must only be lifted using the Quick Lift Jack on the underside of the chassis. The bodywork, including the nosecone, and the suspension must not be used for lifting.
 
 > **Note:** The ADS-DV weighs 300kg, which means each wheel carries approximately 75kg. A single person at each wheel is insufficient to lift the ADS-DV safely and this should not be attempted.
 

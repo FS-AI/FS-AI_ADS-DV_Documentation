@@ -5,7 +5,7 @@
 
 | Version | Date       | Changes                                                      |
 | ------- | ---------- | ------------------------------------------------------------ |
-| 1.0     | 2026-03-XX | First issue of document.                                     |
+| 1.0     | 2026-03-XX | Removed obsolete control references.                         |
 
 > The master copy of this document is stored at [FS-AI/FS-AI_ADS-DV_Documentation](https://github.com/FS-AI/FS-AI_ADS-DV_Documentation).<br>
 > Always check you have the latest version, as printed copies, PDFs, downloads, or repository clones may be out of date.
@@ -35,7 +35,6 @@ This document does not duplicate the content of the [FS-AI ADS-DV User Manual](.
 
 This document should be read and understood in conjunction with the [FS-AI ADS-DV Risk Assessment & Method Statement](./FS-AI%20ADS-DV%20Risk%20Assessment%20%26%20Method%20Statement.md).
 
-> **Note:** This document does not cover joystick operation, which is not yet supported by 2026 ADS-DVs.
 
 
 ## 3. Unattended Storage and Access
@@ -65,6 +64,7 @@ Static Operations must be conducted as follows:
 
 - There must be a clearly defined Hazardous Area extending at least 5m around the ADS-DV while it is active. General personnel must remain outside this area. Tensabarriers or similar portable barrier systems are recommended to mark out the boundary clearly.
 - There must always be a qualified Autonomous Systems Responsible person (ASR) present to operate the ADS-DV with the Remote Emergency Stop (RES).
+- The ASR must keep the RES strapped securely around their waist and on their person at all times while the ADS-DV is active. It must not be held in one hand, put down, or moved out of immediate reach.
 - The ADS-DV must be raised off the ground, with the wheels in the air, at all times. In practice, this means the ADS-DV should remain on suitable stands such as the supplied Skateboard Trolleys throughout Static Operation.
 - The stands used must conform to the following requirements:
   - At least 90mm clearance below the wheels.
@@ -113,6 +113,7 @@ Additionallly:
 Dynamic Operations must be conducted according to the same safety principles as the Formula Student Dynamic Events:
 
 - There must always be an ASR present to operate the ADS-DV with the RES.
+- The ASR must keep the RES strapped securely around their waist and on their person at all times while the ADS-DV is active. It must not be held in one hand, put down, or moved out of immediate reach.
 - Any work on the ADS-DV in the Safe Area must take place according to the same rules as the Static Operations listed above, with the wheels in the air at all times.
 - Outside the actual dynamic test, the ADS-DV must remain on the supplied Skateboard Trolleys for handling and movement.
 - The ADS-DV must enter and exit the designated Dynamic Operating Area on the supplied Skateboard Trolleys.

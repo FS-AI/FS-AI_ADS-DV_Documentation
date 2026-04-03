@@ -3,9 +3,9 @@
 
 ## Document Control
 
-| Version | Date       | Changes                                  |
-| ------- | ---------- | ---------------------------------------- |
-| 1.0     | 2026-03-XX | First issue of document.                 |
+| Version | Date       | Changes                                                      |
+| ------- | ---------- | ------------------------------------------------------------ |
+| 1.0     | 2026-03-XX | Defined TSAL and consolidated ASMS / TSMS terminology.     |
 
 > The master copy of this document is stored at [FS-AI/FS-AI_ADS-DV_Documentation](https://github.com/FS-AI/FS-AI_ADS-DV_Documentation).<br>
 > Always check you have the latest version, as printed copies, PDFs, downloads, or repository clones may be out of date.
@@ -39,7 +39,6 @@ The key equipment for operating the ADS-DV consists of:
 - Remote Emergency Stop (RES)
 - Red Switch Keys (x3)
 - MPP Dongle
-- MPP Joystick
 - Datalogger Memory Card
 - Traction Battery Charger
 - RES Battery Charger
@@ -64,7 +63,7 @@ The key elements of the ADS-DV user interface are:
 - AI Power Switch
 - Multi-Purpose Port (MPP) and MPP Dongle
 - Charger Port
-- TSAL LED Indicators
+- Tractive System Active Light (TSAL) LED Indicators
 - Touch Screen Interface
 
 *Photos to be added.*
@@ -98,6 +97,8 @@ Refer to [FS-AI ADS-DV Inspection Schedule](./FS-AI%20ADS-DV%20Inspection%20Sche
    *Photo to be added.*
 
    > **Note:** The RES Red LED will flash if the battery is low on charge. It may also emit an audible tone. If this occurs, fit a charged battery and recharge the flat battery using the provided RES Battery Charger.
+
+   > **Note:** For any Static Operation or Autonomous Operation, the Autonomous Systems Responsible person (ASR) must keep the RES strapped securely around their waist and on their person at all times while the ADS-DV is active. It must not be held in one hand, put down, or moved out of immediate reach.
 
 6. Verify the Side Emergency Stop Switches are "Out". If not, twist them clockwise so they pop out.
 7. Turn "On" the LV Master Switch.
@@ -164,7 +165,7 @@ Autonomous Operation of the ADS-DV requires the presence of valid CAN signals fr
 
    *Photo to be added.*
 
-5. Turn "On" the AS Master Switch and turn "On" the Traction System Master Switch.
+5. Turn "On" the Autonomous System Master Switch (ASMS) and turn "On" the Tractive System Master Switch (TSMS).
 
    *Photo to be added.*
 
@@ -205,11 +206,11 @@ Autonomous Operation of the ADS-DV requires the presence of valid CAN signals fr
 
 15. The Compute Platform should conduct the Mission by correctly controlling the ADS-DV using the CAN signals.
 
-    > **Note:** The ADS-DV MUST be observed at all times by the ASR. The Remote Emergency Stop MUST be used if the ADS-DV shows any anomalous behaviour.
+    > **Note:** The ADS-DV MUST be observed at all times by the ASR. The RES must remain strapped securely around the ASR's waist and on their person at all times. It must not be held in one hand, put down, or moved out of immediate reach. The Remote Emergency Stop MUST be used if the ADS-DV shows any anomalous behaviour.
 
     > **Note:** Full details on ADS-DV Operational Safety, for both Static and Dynamic operation, are documented separately.
 
-16. Regardless of the success or failure of the Mission, resulting in either "AS Finished" or "Emergency Brake", the ADS-DV must be reset after every Mission by turning "Off" the LV Master Switch, AS Master Switch, and TS Master Switch.
+16. Regardless of the success or failure of the Mission, resulting in either "AS Finished" or "Emergency Brake", the ADS-DV must be reset after every Mission by turning "Off" the LV Master Switch, Autonomous System Master Switch, and Tractive System Master Switch.
 17. Remove the Datalogger Memory Card if the data is required for analysis.
 18. Optionally, power down the Compute Platform by turning "Off" the AI Power Switch.
 
@@ -232,7 +233,7 @@ The ADS-DV should be prepared for storage any time it is left unattended.
 
 ### 7.2. Procedure
 
-1. Remove the AS Master Switch and Traction System Master Switch keys, if present, and store securely.
+1. Remove the Autonomous System Master Switch and Tractive System Master Switch keys, if present, and store securely.
 2. Remove the Datalogger Memory Card, if present, and store securely.
 3. Connect the MPP Dongle to the MPP.
 4. Verify the AI Power Switch is switched "Off".
