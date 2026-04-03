@@ -5,7 +5,7 @@
 
 | Version | Date       | Changes                                                      |
 | ------- | ---------- | ------------------------------------------------------------ |
-| 1.0     | 2026-03-XX | Defined TSAL and consolidated ASMS / TSMS terminology.     |
+| 1.0     | 2026-03-XX | Harmonised GEMS DA3 Datalogger terminology.              |
 
 > The master copy of this document is stored at [FS-AI/FS-AI_ADS-DV_Documentation](https://github.com/FS-AI/FS-AI_ADS-DV_Documentation).<br>
 > Always check you have the latest version, as printed copies, PDFs, downloads, or repository clones may be out of date.
@@ -30,6 +30,8 @@
 
 This document provides details of the procedures that should be followed to operate the FS-AI ADS-DV safely.
 
+Common terms and abbreviations used across the current ADS-DV documentation set are defined in the [FS-AI ADS-DV Glossary](./FS-AI%20ADS-DV%20Glossary.md).
+
 
 ## 2. Key Equipment
 
@@ -39,14 +41,14 @@ The key equipment for operating the ADS-DV consists of:
 - Remote Emergency Stop (RES)
 - Red Switch Keys (x3)
 - MPP Dongle
-- Datalogger Memory Card
+- GEMS DA3 Datalogger Memory Card
 - Traction Battery Charger
 - RES Battery Charger
 
 > **Note:** The ADS-DV may be provided with additional items not listed above. This is not a complete inventory. These may include:
 >
 > - Quick Lift Jack
-> - Trolleys (x2)
+> - Skateboard Trolleys (x2)
 > - Plastic Ramps
 > - Spares
 
@@ -59,7 +61,7 @@ The key elements of the ADS-DV user interface are:
 
 - Red Switch Keys (x3)
 - Remote Emergency Stop (RES)
-- Side Emergency Stop Buttons (x2)
+- Side Emergency Stop Switches (x2)
 - AI Power Switch
 - Multi-Purpose Port (MPP) and MPP Dongle
 - Charger Port
@@ -148,7 +150,7 @@ Autonomous Operation of the ADS-DV requires the presence of valid CAN signals fr
 - MPP Dongle
 - Remote Emergency Stop (RES)
 - Red Switch Keys (x3)
-- Datalogger Memory Card
+- GEMS DA3 Datalogger Memory Card
 - Compute Platform
 
 > **Note:** The Compute Platform refers to any hardware used to send CAN signals to the ADS-DV. This may be the provided InCarPC or any other hardware used to control the ADS-DV.
@@ -171,9 +173,9 @@ Autonomous Operation of the ADS-DV requires the presence of valid CAN signals fr
 
 6. Ensure the Compute Platform is sending CAN signals to the ADS-DV.
 
-   > **Note:** As soon as valid CAN signals are received by the ADS-DV, the Traction System and Emergency Brake System will activate.
+   > **Note:** As soon as valid CAN signals are received by the ADS-DV, the Tractive System and Emergency Brake System will activate.
 
-7. Wait for the TSAL Indicator LEDs to show "Red", indicating the Traction System is active.
+7. Wait for the TSAL Indicator LEDs to show "Red", indicating the Tractive System is active.
 8. Wait for the Emergency Brake System to transition from "EBS Init" to "EBS Armed". The sound of the pump running may be heard.
 
    > **Note:** If the Emergency Brake System has been completely discharged for storage, it may take more than one pump cycle to arm. This is normal. The status of the Emergency Brake System can be viewed on the Touch Screen. It will progress from "EBS Init" through "EBS Charging" to "EBS Armed".
@@ -182,7 +184,7 @@ Autonomous Operation of the ADS-DV requires the presence of valid CAN signals fr
 
    *Photo to be added.*
 
-10. Insert the Datalogger Memory Card, or confirm insertion, and verify that the two LEDs are both showing "Green".
+10. Insert the GEMS DA3 Datalogger Memory Card, or confirm insertion, and verify that the two LEDs are both showing "Green".
 
     *Photo to be added.*
 
@@ -211,7 +213,7 @@ Autonomous Operation of the ADS-DV requires the presence of valid CAN signals fr
     > **Note:** Full details on ADS-DV Operational Safety, for both Static and Dynamic operation, are documented separately.
 
 16. Regardless of the success or failure of the Mission, resulting in either "AS Finished" or "Emergency Brake", the ADS-DV must be reset after every Mission by turning "Off" the LV Master Switch, Autonomous System Master Switch, and Tractive System Master Switch.
-17. Remove the Datalogger Memory Card if the data is required for analysis.
+17. Remove the GEMS DA3 Datalogger Memory Card if the data is required for analysis.
 18. Optionally, power down the Compute Platform by turning "Off" the AI Power Switch.
 
     > **Note:** If the AI Power Switch is left "On" it is important to minimise the time spent with the LV Master Switch "Off", to avoid the Compute Platform over-discharging the LV Battery and causing degradation of the battery performance.
@@ -234,7 +236,7 @@ The ADS-DV should be prepared for storage any time it is left unattended.
 ### 7.2. Procedure
 
 1. Remove the Autonomous System Master Switch and Tractive System Master Switch keys, if present, and store securely.
-2. Remove the Datalogger Memory Card, if present, and store securely.
+2. Remove the GEMS DA3 Datalogger Memory Card, if present, and store securely.
 3. Connect the MPP Dongle to the MPP.
 4. Verify the AI Power Switch is switched "Off".
 

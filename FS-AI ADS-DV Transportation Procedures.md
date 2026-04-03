@@ -5,7 +5,7 @@
 
 | Version | Date       | Changes                                                                           |
 | ------- | ---------- | --------------------------------------------------------------------------------- |
-| TBD     | 2026-04-02 | Normalised Quick Lift Jack casing.                               |
+| TBD     | 2026-04-03 | Added reference to standalone glossary document.                  |
 
 > The master copy of this document is stored at [FS-AI/FS-AI_ADS-DV_Documentation](https://github.com/FS-AI/FS-AI_ADS-DV_Documentation).<br>
 > Always check you have the latest version, as printed copies, PDFs, downloads, or repository clones may be out of date.
@@ -24,6 +24,8 @@
 ## 1. Introduction
 
 This document outlines the procedures for moving, loading / unloading, and transporting the FS-AI ADS-DV.
+
+Common terms and abbreviations used across the current ADS-DV documentation set are defined in the [FS-AI ADS-DV Glossary](./FS-AI%20ADS-DV%20Glossary.md).
 
 This document does not fully duplicate the [FS-AI ADS-DV User Manual](./FS-AI%20ADS-DV%20User%20Manual.md). Refer to that document for other aspects of ADS-DV operation.
 
@@ -96,7 +98,7 @@ The ADS-DV must only be lifted using the Quick Lift Jack on the underside of the
 
 The ground clearance of the ADS-DV is low. The plastic ramps are provided to allow smooth transitions over steps, lips, kerbs, and similar changes in level.
 
-Where the ADS-DV must be manoeuvred up or down kerbs, lips, or similar level changes, this must not be attempted with the ADS-DV on the Skateboard Tolleys. Use the supplied plastic ramps and move the ADS-DV on its own wheels only after completing the Preparation for Storage procedure, including the Brake Discharge step before power-down.
+Where the ADS-DV must be manoeuvred up or down kerbs, lips, or similar level changes, this must not be attempted with the ADS-DV on the Skateboard Trolleys. Use the supplied plastic ramps and move the ADS-DV on its own wheels only after completing the Preparation for Storage procedure, including the Brake Discharge step before power-down.
 
 The ADS-DV should also be placed on its own wheels, not on the Skateboard Trolleys, when it is positioned inside the transport vehicle or trailer for securing.
 

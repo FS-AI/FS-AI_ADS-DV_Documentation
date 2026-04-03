@@ -5,7 +5,7 @@
 
 | Version | Date       | Changes                                                      |
 | ------- | ---------- | ------------------------------------------------------------ |
-| 1.0     | 2026-03-XX | Removed obsolete control references.                         |
+| 1.0     | 2026-03-XX | Harmonised GEMS DA3 Datalogger terminology.                  |
 
 > The master copy of this document is stored at [FS-AI/FS-AI_ADS-DV_Documentation](https://github.com/FS-AI/FS-AI_ADS-DV_Documentation).<br>
 > Always check you have the latest version, as printed copies, PDFs, downloads, or repository clones may be out of date.
@@ -27,6 +27,8 @@
 ## 1. Introduction
 
 This document provides operational safety guidance for handling, storing, and operating the FS-AI ADS-DV.
+
+Common terms and abbreviations used across the current ADS-DV documentation set are defined in the [FS-AI ADS-DV Glossary](./FS-AI%20ADS-DV%20Glossary.md).
 
 
 ## 2. Scope and Current Limitations
@@ -89,15 +91,15 @@ Dynamic Operations of the ADS-DV are only permitted within a designated Dynamic 
 
 The minimum dimensions for a Dynamic Operating Area are 30m x 50m. A larger area is recommended.
 
-> **Note:** Dynamic Operating Areas require the marking out of a 10m Safe Run Off Zone as a defined boundary.
+> **Note:** Dynamic Operating Areas require the marking out of a 10m Run Off Zone as a defined boundary.
 
-Thus, a 30m x 50m Dynamic Operating Area would have an internal 10m x 30m area for ADS-DV operations surrounded on all sides by the 10m Safe Run Off Zone.
+Thus, a 30m x 50m Dynamic Operating Area would have an internal 10m x 30m area for ADS-DV operations surrounded on all sides by the 10m Run Off Zone.
 
 *Diagram to be added.*
 
-## If the ADS-DV enters the Safe Run Off Zone, the ASR **MUST** activate the RES **IMMEDIATELY**. This is the primary Risk Mitigation for Dynamic Operations.
+## If the ADS-DV enters the Run Off Zone, the ASR **MUST** activate the RES **IMMEDIATELY**. This is the primary Risk Mitigation for Dynamic Operations.
 
-Additionallly:
+Additionally:
 
 - There must be a Safe Area for general personnel, separated from the Dynamic Operating Area by a structural barrier such as a tyre wall.
 - It is highly recommended to have a covered area within the Safe Area to protect the ADS-DV and personnel from sun, wind and rain. For example a pop-up gazebo.
@@ -121,7 +123,7 @@ Dynamic Operations must be conducted according to the same safety principles as 
 - The ASR must only be responsible for mission selection and the RES. They must not perform any other duties while the ADS-DV is active.
 - Only one other person in addition to the ASR is allowed "over the wall", i.e. outside the Safe Area, to assist with lifting the ADS-DV on or off the trolleys (using the Quick Lift Jack) immediately before or after the dynamic test.
 - No tethered systems to the ADS-DV are allowed. Wireless connections only.
-- Prior to selecting a Mission and activating the RES "Go" signal, the GEMS DA3 datalogger card must be inserted and confirmed to be logging, indicated by two "Green" lights. This will require downloading the data to a PC at regular intervals to ensure free storage space is always available.
+- Prior to selecting a Mission and activating the RES "Go" signal, the GEMS DA3 Datalogger Memory Card must be inserted and confirmed to be logging, indicated by two "Green" lights. This will require downloading the data to a Windows PC at regular intervals to ensure free storage space is always available.
 
 > **Note:** A Dynamic Operations log must be filled in by the ASR. See [FS-AI ADS-DV Operations Logging and Record Keeping Protocol](./FS-AI%20ADS-DV%20Operations%20Logging%20and%20Record%20Keeping%20Protocol.md).
 

@@ -5,7 +5,7 @@
 
 | Version | Date       | Changes                  |
 | ------- | ---------- | ------------------------ |
-| 1.0     | 2026-03-XX | First issue of document. |
+| 1.0     | 2026-03-XX | Added glossary reference and updated terminology.      |
 
 > The master copy of this document is stored at [FS-AI/FS-AI_ADS-DV_Documentation](https://github.com/FS-AI/FS-AI_ADS-DV_Documentation).<br>
 > Always check you have the latest version, as printed copies, PDFs, downloads, or repository clones may be out of date.
@@ -13,67 +13,75 @@
 
 ## Table of Contents
 
-- Inertia Switch
+1. [Introduction](#1-introduction)
+2. [References](#2-references)
+3. [Inspection Scope](#3-inspection-scope)
+4. [Mechanical Checks & Faults](#4-mechanical-checks--faults)
+5. [Preventative Maintenance](#5-preventative-maintenance)
 
 
+## 1. Introduction
 
-**Preparation for Storage**
+This document defines the recurring inspection and mechanical-check requirements for the ADS-DV.
 
-The ADS-DV should be prepared for storage as follows:
+It is intended to be used alongside the current User Manual, Operational Safety, Transportation Procedures, RAMS, and the [FS-AI ADS-DV Glossary](./FS-AI%20ADS-DV%20Glossary.md). This document does not repeat storage, transport, or operating procedures; it identifies when inspections are required and what recurring mechanical checks must be completed before operation.
 
-- Confirm that the minimum cell voltage of the 48V battery is at least 3.2V, if required re-charge the 48V battery before storing the vehicle.
-- Lift the ADS-DV with the Quick-Lift jack and place onto the 'skateboard' trolleys, so all 4 wheels are in the air.
-- Discharge the hydraulic brakes according to the Operation Manual section 10 until the wheels are free to turn. This minimises the retained pressure in the brake lines and calipers to avoid any leakage.
-- Confirm that all Red keys are removed and safely stored along with the MPP dongle in the plastic Inventory crate.
-- Confirm the black AI Master Switch is rotated anti-clockwise to isolate any drain on the 12V battery.
+## 2. References
 
-> **Note:** During storage the brake lines remain locked-off by a normally closed valve. Thus, a variation in temperature or ambient pressure may result in the wheels re-locking. If this occurs the residual brake line pressure is still very low compared to the deployed EBS pressure.
+- [FS-AI ADS-DV User Manual](./FS-AI%20ADS-DV%20User%20Manual.md)
+- [FS-AI ADS-DV Operational Safety](./FS-AI%20ADS-DV%20Operational%20Safety.md)
+- [FS-AI ADS-DV Transportation Procedures](./FS-AI%20ADS-DV%20Transportation%20Procedures.md)
+- [FS-AI ADS-DV Risk Assessment & Method Statement](./FS-AI%20ADS-DV%20Risk%20Assessment%20%26%20Method%20Statement.md)
+- [FS-AI ADS-DV Glossary](./FS-AI%20ADS-DV%20Glossary.md)
 
-Should the ADS-DV need to be stored for a period longer than 14 days, please contact IMechE Formula Student AI Technical Support for information on an inspection / service schedule.
 
-**Management of the 12V Battery**
+## 3. Inspection Scope
 
-The 12V battery fitted to the ADS-DV is of a very low capacity and is not intended to supply current except to allow the vehicle to start up and energise the internal DC / DC converter.
-
-However, to ensure the AI system remains powered during power-cycles & resets of the ADS-DV, loads supplied via the black AI Master Switch (AIMS) are connected direct to the 12V battery.
-
-This means that if the AIMS is switch 'On' (clockwise), with the ADS-DV Low Voltage Master Switch (LVMS) switched 'Off', there is a significant risk the 12V battery will be fully discharged. If this happens the ADS-DV will no longer start up.
-
-**It is important that the ASR responsible for the vehicle is aware of this issue and takes steps to ensure it does not occur.**
-
-**Do not leave the ADS-DV powered down (Low Voltage Master Switch 'Off') with the AI Master Switch 'On' (clockwise) for more than 30s.**
-
-**Should the 12V battery become so discharged the vehicle will not start up, a recovery procedure may be required, this is documented separately and will be provided if required.**
-
-> **Note:** If the 12V battery is repeatedly run flat and recovered, it will sustain damage and loss of capacity, and may need replacement. This cost will need to be met by the Organising Entity.
-
-**Mechanical Checks & Faults**
-
-The Organising Entity must conduct basic maintenance checks on the ADS-DV on the following schedule:
+The ADS-DV Operator must conduct basic maintenance checks on the ADS-DV on the following schedule:
 
 - After transportation, before Dynamic Operation.
 - After the ADS-DV has been left unattended, before Static Operation.
 - Weekly (if neither of the above precede it).
 
-These basic checks must be performed (or supervised) by competent, trained or experienced personnel such as mechanical workshop technicians, automotive technicians or other engineering trained personnel:
+These basic checks must be performed (or supervised) by competent, trained, or experienced personnel such as mechanical workshop technicians, automotive technicians, or other engineering-trained personnel.
+
+> **Note:** An inspection record sheet will be provided with the ADS-DV or made available online. It must be completed whenever an inspection is carried out.
+
+
+## 4. Mechanical Checks & Faults
+
+Perform the following checks before operation:
 
 - Visual check of brake lines and wheel speed wiring for damage.
 - Visual check for brake fluid leakage.
-- Check of all visible chassis, suspension, steering and brake fasteners for tightness.
+- Check of all visible chassis, suspension, steering, and brake fasteners for tightness.
 - Tightness check of all Wheel Nuts.
+- Check tyre pressures are between 20psi and 22psi and adjust if required.
 - Move steering from lock to lock and check driveshafts and steering are free from binding and all components are free from play and secure.
-- Rotate wheels on stands and visually check for any indication of motor, bearing, pulley or belt drive issues or damage.
-  - This will require lifting up of the bodywork to inspect the belt drives- care should be taken not to damage the wiring between the body and chassis.
-- Inspection of 'skateboard' trolleys for loose nuts & bolts or damage.
-- Inspection of Quick-Lift jack for loose nuts & bolts or damage.
+- Rotate wheels on stands and visually check for any indication of motor, bearing, pulley, or belt-drive issues or damage.
+- Inspect the Skateboard Trolleys for loose nuts, bolts, or damage.
+- Inspect the Quick Lift Jack for loose nuts, bolts, or damage.
+
+> **Note:** Inspecting the belt drives will require lifting the bodywork. Care should be taken not to damage the wiring between the body and chassis.
 
 Any issues encountered must be communicated to IMechE Formula Student AI Technical Support for advice before the ADS-DV may be operated.
-
-**A Mechanical Checks log sheet will be provided which must be kept with the ADS-DV and filled in by the checking personnel.**
 
 The following components should not be removed and / or refitted without consultation with IMechE Formula Student AI Technical Support:
 
 - Wheels & Wheel Nuts.
 - Nosecone.
 
-**It is especially important that the wheels are refitted according to the correct procedure if removed. Improper fitment has caused damage in the past to Wheel Nuts and Wheels.**
+> **Note:** It is especially important that the wheels are refitted according to the correct procedure if removed. Improper fitment has caused damage in the past to Wheel Nuts and Wheels.
+
+
+## 5. Preventative Maintenance
+
+In addition to the inspection checks above, the ADS-DV should receive basic preventative maintenance attention during periods of low use or storage.
+
+- At least once every week, the ADS-DV should be turned on for at least 15 minutes so that the LV Battery can be recharged from the Traction Battery through the DC/DC converter.
+- If the Traction Battery voltage is below 50.0V, recharge the Traction Battery according to [FS-AI ADS-DV User Manual, Section 8](./FS-AI%20ADS-DV%20User%20Manual.md#8-charging-the-traction-battery).
+- Follow the current [FS-AI ADS-DV User Manual](./FS-AI%20ADS-DV%20User%20Manual.md) for the detailed safe procedure to energise and shut down the ADS-DV when carrying out this preventative maintenance.
+
+> **Note:** If the ADS-DV is returned to storage after this preventative-maintenance energisation, the Preparation for Storage procedure in [FS-AI ADS-DV User Manual, Section 7](./FS-AI%20ADS-DV%20User%20Manual.md#7-preparation-for-storage) must be completed, including Brake Discharge before the ADS-DV is left unattended.
+
+> **Note:** The ADS-DV must always be stored on the Skateboard Trolleys to avoid tyre flat spots.
