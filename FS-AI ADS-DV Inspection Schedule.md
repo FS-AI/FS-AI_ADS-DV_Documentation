@@ -27,7 +27,7 @@ The ADS-DV should be prepared for storage as follows:
 - Confirm that all Red keys are removed and safely stored along with the MPP dongle in the plastic Inventory crate.
 - Confirm the black AI Master Switch is rotated anti-clockwise to isolate any drain on the 12V battery.
 
-**Note that during storage the brake lines remain locked-off by a normally closed valve. Thus, a variation in temperature or ambient pressure may result in the wheels re-locking. If this occurs the residual brake line pressure is still very low compared to the deployed EBS pressure.**
+> **Note:** During storage the brake lines remain locked-off by a normally closed valve. Thus, a variation in temperature or ambient pressure may result in the wheels re-locking. If this occurs the residual brake line pressure is still very low compared to the deployed EBS pressure.
 
 Should the ADS-DV need to be stored for a period longer than 14 days, please contact IMechE Formula Student AI Technical Support for information on an inspection / service schedule.
 
@@ -45,7 +45,7 @@ This means that if the AIMS is switch 'On' (clockwise), with the ADS-DV Low Volt
 
 **Should the 12V battery become so discharged the vehicle will not start up, a recovery procedure may be required, this is documented separately and will be provided if required.**
 
-**Note that if the 12V battery is repeatedly run flat and recovered, it will sustain damage and loss of capacity, and may need replacement. This cost will need to be met by the Organising Entity.**
+> **Note:** If the 12V battery is repeatedly run flat and recovered, it will sustain damage and loss of capacity, and may need replacement. This cost will need to be met by the Organising Entity.
 
 **Mechanical Checks & Faults**
 

@@ -23,7 +23,7 @@
 
 ## 1. Introduction
 
-This document outlines the current procedure for moving, loading / unloading, and transporting the FS-AI ADS-DV.
+This document outlines the procedures for moving, loading / unloading, and transporting the FS-AI ADS-DV.
 
 This document does not fully duplicate the [FS-AI ADS-DV User Manual](./FS-AI%20ADS-DV%20User%20Manual.md). Refer to that document for other aspects of ADS-DV operation.
 
@@ -48,7 +48,7 @@ The following equipment and accessories must accompany the ADS-DV during transpo
 
   *Photo to be added.*
 
-- Red Keys (x3 + 1 spare).
+- Red Switch Keys (x3 + 1 spare).
 
   *Photo to be added.*
 
@@ -56,7 +56,7 @@ The following equipment and accessories must accompany the ADS-DV during transpo
 
   *Photo to be added.*
 
-- Pair of "skateboard" trolleys.
+- Pair of Skateboard Trolleys.
 
   *Photo to be added.*
 
@@ -66,7 +66,7 @@ The following equipment and accessories must accompany the ADS-DV during transpo
 
 In the event of loss or damage to any of this transport inventory, immediately inform the IMechE Formula Student Office and IMechE Formula Student AI Technical Support, as contingency procedures may be required.
 
-> Note: The full ADS-DV inventory includes additional items not required for transport. If these are to accompany the ADS-DV they will be itemised separately.
+> **Note:** The full ADS-DV inventory includes additional items not required for transport. If these are to accompany the ADS-DV they will be itemised separately.
 
 
 ## 3. Preparing the ADS-DV for Movement
@@ -86,28 +86,28 @@ This Brake Discharge step is required before the ADS-DV can be pushed on its whe
 
 The transport document does not duplicate the full step-by-step storage procedure. Follow the User Manual directly for the detailed sequence.
 
-> If the ADS-DV needs to be pushed on its wheels after storage, or if slight brake re-locking is observed during handling, repeat the Brake Discharge part of [FS-AI ADS-DV User Manual, Section 7](./FS-AI%20ADS-DV%20User%20Manual.md#7-preparation-for-storage), then complete the remaining power-down and equipment-storage steps again before continuing transport movement.
+> **Note:** If the ADS-DV needs to be pushed on its wheels after storage, or if slight brake re-locking is observed during handling, repeat the Brake Discharge part of [FS-AI ADS-DV User Manual, Section 7](./FS-AI%20ADS-DV%20User%20Manual.md#7-preparation-for-storage), then complete the remaining power-down and equipment-storage steps again before continuing transport movement.
 
 ### 3.2. Physical Preparation
 
 The ADS-DV must only be lifted using the Quick Lift jack on the underside of the chassis. The bodywork, including the nosecone, and the suspension must not be used for lifting.
 
-> Note: The ADS-DV weighs 300kg, which means each wheel carries approximately 75kg. A single person at each wheel is insufficient to lift the ADS-DV safely and this should not be attempted.
+> **Note:** The ADS-DV weighs 300kg, which means each wheel carries approximately 75kg. A single person at each wheel is insufficient to lift the ADS-DV safely and this should not be attempted.
 
 The ground clearance of the ADS-DV is low. The plastic ramps are provided to allow smooth transitions over steps, lips, kerbs, and similar changes in level.
 
-Where the ADS-DV must be manoeuvred up or down kerbs, lips, or similar level changes, this must not be attempted with the ADS-DV on the trolleys. Use the supplied plastic ramps and move the ADS-DV on its own wheels only after completing the Preparation for Storage procedure, including the Brake Discharge step before power-down.
+Where the ADS-DV must be manoeuvred up or down kerbs, lips, or similar level changes, this must not be attempted with the ADS-DV on the Skateboard Tolleys. Use the supplied plastic ramps and move the ADS-DV on its own wheels only after completing the Preparation for Storage procedure, including the Brake Discharge step before power-down.
 
-The ADS-DV should also be placed on its own wheels, not on the trolleys, when it is positioned inside the transport vehicle or trailer for securing.
+The ADS-DV should also be placed on its own wheels, not on the Skateboard Trolleys, when it is positioned inside the transport vehicle or trailer for securing.
 
 
 ## 4. ADS-DV Movement Procedure
 
 All movement of the ADS-DV for transport should take place only after completing the Preparation for Storage procedure in [FS-AI ADS-DV User Manual, Section 7](./FS-AI%20ADS-DV%20User%20Manual.md#7-preparation-for-storage).
 
-This means the ADS-DV should be powered down, with the RES, "Red Keys", and MPP Dongle safely stored, before it is moved. The ADS-DV should not be powered up during transport movement.
+This means the ADS-DV should be powered down, with the RES, Red Switch Keys, and MPP Dongle safely stored, before it is moved. The ADS-DV should not be powered up during transport movement.
 
-For transport handling, movement on the supplied "skateboard" trolleys is the default method. Movement on the ADS-DV's own wheels should be used only when necessary, such as when manoeuvring over the supplied plastic ramps or when positioning the ADS-DV inside the transport vehicle or trailer for securing.
+For transport handling, movement on the supplied Skateboard Trolleys is the default method. Movement on the ADS-DV's own wheels should be used only when necessary, such as when manoeuvring over the supplied plastic ramps or when positioning the ADS-DV inside the transport vehicle or trailer for securing.
 
 ### 4.1. Personnel Required
 
@@ -119,7 +119,7 @@ The Safety Supervisor must not perform any other task. They must observe all mov
 
 #### Vehicle Handlers
 
-Vehicle Handlers should move the ADS-DV using the supplied "skateboard" trolleys wherever practicable.
+Vehicle Handlers should move the ADS-DV using the supplied Skateboard Trolleys wherever practicable.
 
 Where movement on the ADS-DV's own wheels is necessary, place the ADS-DV on its wheels using the Quick Lift Jack only after the Preparation for Storage procedure has been completed, including the Brake Discharge step before power-down.
 
@@ -130,17 +130,17 @@ Use the on-wheel movement method only where necessary, including:
 
 Gloves and safety shoes are recommended for Vehicle Handlers pushing the ADS-DV.
 
-> Note: Only push the ADS-DV using the pushbar or the tyres, never the bodywork or suspension.
+> **Note:** Only push the ADS-DV using the pushbar or the tyres, never the bodywork or suspension.
 
 ### 4.2. Risk Assessment
 
-The primary risk associated with moving the ADS-DV is "roll-away" on a slope. To mitigate this risk, the following actions are recommended:
+The primary risk associated with moving the ADS-DV is 'roll-away' on a slope. To mitigate this risk, the following actions are recommended:
 
 - Avoid moving the ADS-DV on a surface with a slope greater than 10% / 10 in 1.
-- This includes any ramps used when loading the ADS-DV onto a car carrier or trailer, or a "tilt bed" car carrier or trailer.
+    - This includes any ramps used when loading the ADS-DV onto a car carrier or trailer, or a 'tilt bed' car carrier or trailer.
 - Steeper loading ramps will require the use of a winch.
-- The ADS-DV does not have a "towing eye". A winch cable may be attached to a suspension wishbone as close to the bodywork as possible. Protect the ADS-DV from damage from the cable using padding.
-- Brief the Vehicle Handlers to always push the ADS-DV up a slope, not pull, and to be aware of the risk of "roll-away".
+    - The ADS-DV does not have a 'towing eye'. A winch cable may be attached to a suspension wishbone as close to the bodywork as possible. Protect the ADS-DV from damage from the cable using padding.
+- Brief the Vehicle Handlers to always push the ADS-DV up a slope, not pull, and to be aware of the risk of 'roll-away'.
 - Ensure the Safety Supervisor is watching the ADS-DV at all times.
 
 
@@ -152,13 +152,17 @@ The ADS-DV and transport inventory must only be transported inside a covered and
 
 The ADS-DV is not fully waterproof and must not be transported uncovered, or in any way which risks water ingress.
 
+The ADS-DV must not be left out in the rain to get wet. A waterproof car cover is provided to protect the ADS-DV in the event of rain, should there be no other cover available.
+
+> **Note:** The ADS-DV must not be transported on an open trailer just using the car cover for protection. A closed trailer is required.
+
 ### 5.2. Securing During Transport
 
 At all times during transport the ADS-DV must be securely tied down using at least four straps preventing longitudinal, lateral, and twisting motion. The straps must attach to the ADS-DV wheels and not the suspension or bodywork.
 
-When secured for transport, the ADS-DV must rest on its own wheels. It must not be transported on the "skateboard" trolleys.
+When secured for transport, the ADS-DV must rest on its own wheels. It must not be transported on the Skateboard Trolleys.
 
-At all times during transport the transport inventory must be secured such that it cannot slide around and sustain damage, or impact the ADS-DV in any way. If the "skateboard" trolleys are carried in the transport vehicle or trailer, they must be fully secured.
+At all times during transport the transport inventory must be secured such that it cannot slide around and sustain damage, or impact the ADS-DV in any way. If the Skateboard Trolleys are carried in the transport vehicle or trailer, they must be fully secured.
 
 The ADS-DV does not have any specific access security provision and is not tamper proof. It should not be left unattended in an insecure environment. The covered car carrier or trailer used for transport should be locked.
 
