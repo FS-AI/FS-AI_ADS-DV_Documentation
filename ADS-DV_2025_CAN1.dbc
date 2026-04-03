@@ -1,0 +1,619 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: LOG PCAN_GPS AI JOYSTICK VCU OPUS RES
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ AI2VCU_Drive_F_Count : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ AI2VCU_Brake_Count : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ AI2VCU_Steer_Count : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ AI2VCU_Drive_R_Count : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ AI2VCU_Status_Count : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 770 VCU2OPUS_3: 8 VCU
+ SG_ EBS_TEST_BITFIELD_LATCHED : 16|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ EBS_TEST_BITFIELD : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
+
+BO_ 769 VCU2OPUS_2: 8 VCU
+ SG_ EBS_REAR_CALIPER_PRESS : 48|16@1- (0.01,0) [-327.68|327.67] "Bar"  OPUS
+ SG_ EBS_FRONT_CALIPER_PRESS : 32|16@1- (0.01,0) [-327.68|327.67] "Bar"  OPUS
+ SG_ EBS_REAR_ACC_PRESS : 16|16@1- (0.01,0) [-327.68|327.67] "Bar"  OPUS
+ SG_ EBS_FRONT_ACC_PRESS : 0|16@1- (0.01,0) [-327.68|327.67] "Bar"  OPUS
+
+BO_ 768 VCU2OPUS_1: 8 VCU
+ SG_ LEM_500A_ADC : 48|16@1+ (0.25,-625) [-625|15758.75] "A"  OPUS
+ SG_ AUX_HV : 32|16@1+ (0.001,0) [0|65.535] "V"  OPUS
+ SG_ VBAT_ADC : 16|16@1+ (0.001,0) [0|65.535] "V"  OPUS
+ SG_ KL15_ADC : 0|16@1+ (0.001,0) [0|65.535] "V"  OPUS
+
+BO_ 0 NMT: 2 VCU
+ SG_ CMD : 0|8@1+ (1,0) [0|255] ""  LOG,OPUS,RES,JOYSTICK
+ SG_ NODE_ID : 8|8@1+ (1,0) [0|255] ""  LOG,OPUS,RES,JOYSTICK
+
+BO_ 1312 VCU2AI_Status: 8 VCU
+ SG_ EBS_STATE : 36|4@1+ (1,0) [0|15] ""  OPUS
+ SG_ TS_STATE : 28|4@1+ (1,0) [0|15] ""  OPUS
+ SG_ OP_STATE : 4|4@1+ (1,0) [0|15] ""  OPUS
+ SG_ BRAKE_PLAUSIBILITY_FAULT : 50|1@1- (1,0) [0|1] "__F__"  LOG,AI,OPUS
+ SG_ BMS_FAULT : 49|1@1- (1,0) [0|1] "__F__"  LOG,AI,OPUS
+ SG_ SHUTDOWN_CAUSE : 56|8@1+ (1,0) [0|255] ""  LOG,AI,OPUS
+ SG_ MISSION_STATUS_FAULT : 47|1@1- (1,0) [0|1] "__F__"  LOG,AI,OPUS
+ SG_ AUTONOMOUS_BRAKING_FAULT : 46|1@1- (1,0) [0|1] "__F__"  LOG,AI,OPUS
+ SG_ CHARGE_PROCEDURE_FAULT : 48|1@1- (1,0) [0|1] "__F__"  LOG,AI,OPUS
+ SG_ WARN_BATT_SOC_LOW : 33|1@1- (1,0) [0|1] ""  LOG,AI,OPUS
+ SG_ WARN_BATT_TEMP_HIGH : 32|1@1- (1,0) [0|1] ""  LOG,AI,OPUS
+ SG_ AI_COMMS_LOST : 45|1@1- (1,0) [0|1] "__F__"  LOG,AI,OPUS
+ SG_ OFFBOARD_CHARGER_FAULT : 44|1@1- (1,0) [0|1] "__F__"  LOG,AI,OPUS
+ SG_ EBS_FAULT : 43|1@1- (1,0) [0|1] "__F__"  LOG,AI,OPUS
+ SG_ HVIL_SHORT_FAULT : 42|1@1- (1,0) [0|1] "__F__"  LOG,AI,OPUS
+ SG_ HVIL_OPEN_FAULT : 41|1@1- (1,0) [0|1] "__F__"  LOG,AI,OPUS
+ SG_ AI_ESTOP_REQUEST : 40|1@1- (1,0) [0|1] "__F__"  LOG,AI,OPUS
+ SG_ GO_SIGNAL : 11|1@1- (1,0) [0|1] ""  LOG,AI,OPUS
+ SG_ AMI_STATE : 20|4@1+ (1,0) [0|15] ""  LOG,AI,OPUS
+ SG_ HANDSHAKE : 0|1@1- (1,0) [0|1] ""  LOG,AI,OPUS
+ SG_ WARNING_STATUS : 25|1@1- (1,0) [0|1] ""  LOG,AI,OPUS
+ SG_ FAULT_STATUS : 24|1@1- (1,0) [0|1] ""  LOG,AI,OPUS
+ SG_ SHUTDOWN_REQUEST : 8|1@1- (1,0) [0|1] ""  LOG,AI,OPUS
+ SG_ STEERING_STATUS : 12|2@1+ (1,0) [0|3] ""  LOG,AI,OPUS
+ SG_ AS_STATE : 16|4@1+ (1,0) [0|7] ""  LOG,AI,OPUS
+ SG_ TS_SWITCH_STATUS : 10|1@1- (1,0) [0|1] ""  LOG,AI,OPUS
+ SG_ AS_SWITCH_STATUS : 9|1@1- (1,0) [0|1] ""  LOG,AI,OPUS
+
+BO_ 1315 VCU2AI_Steer: 6 VCU
+ SG_ ANGLE_REQUEST : 32|16@1- (0.1,0) [-21|21] "deg"  LOG,AI,OPUS
+ SG_ ANGLE_MAX : 16|16@1+ (0.1,0) [0|21] "deg"  LOG,AI,OPUS
+ SG_ ANGLE : 0|16@1- (0.1,0) [-21|21] "deg"  LOG,AI,OPUS
+
+BO_ 1317 VCU2AI_Speeds: 8 VCU
+ SG_ RR_WHEEL_SPEED : 48|16@1+ (1,0) [0|1250] "rpm"  LOG,AI,OPUS
+ SG_ RL_WHEEL_SPEED : 32|16@1+ (1,0) [0|1250] "rpm"  LOG,AI,OPUS
+ SG_ FR_WHEEL_SPEED : 16|16@1+ (1,0) [0|1250] "rpm"  LOG,AI,OPUS
+ SG_ FL_WHEEL_SPEED : 0|16@1+ (1,0) [0|1250] "rpm"  LOG,AI,OPUS
+
+BO_ 1296 AI2VCU_Status: 8 AI
+ SG_ VEH_SPEED_DEMAND : 56|8@1+ (1,0) [0|255] "km/h"  LOG,OPUS,VCU
+ SG_ VEH_SPEED_ACTUAL : 48|8@1+ (1,0) [0|255] "km/h"  LOG,OPUS,VCU
+ SG_ CONES_COUNT_ALL : 32|16@1+ (1,0) [0|65535] ""  LOG,OPUS,VCU
+ SG_ CONES_COUNT_ACTUAL : 24|8@1+ (1,0) [0|255] ""  LOG,OPUS,VCU
+ SG_ LAP_COUNTER : 16|4@1+ (1,0) [0|15] ""  LOG,OPUS,VCU
+ SG_ HANDSHAKE : 0|1@1- (1,0) [0|1] ""  LOG,OPUS,VCU
+ SG_ MISSION_STATUS : 12|2@1+ (1,0) [0|3] ""  LOG,OPUS,VCU
+ SG_ ESTOP_REQUEST : 8|1@1- (1,0) [0|1] ""  LOG,OPUS,VCU
+ SG_ DIRECTION_REQUEST : 14|2@1+ (1,0) [0|3] ""  LOG,OPUS,VCU
+
+BO_ 1280 VCU2LOG_Dynamics1: 8 VCU
+ SG_ Drive_trq_target_pct : 56|8@1+ (1,0) [0|100] "%"  LOG,OPUS
+ SG_ Drive_trq_actual_pct : 48|8@1+ (1,0) [0|100] "%"  LOG,OPUS
+ SG_ Brake_target_pct : 40|8@1+ (1,0) [0|100] "%"  LOG,OPUS
+ SG_ Brake_actual_pct : 32|8@1+ (1,0) [0|100] "%"  LOG,OPUS
+ SG_ Steer_target : 24|8@1- (0.5,0) [-64|63.5] "deg"  LOG,OPUS
+ SG_ Steer_actual : 16|8@1- (0.5,0) [-64|63.5] "deg"  LOG,OPUS
+ SG_ Speed_target : 8|8@1+ (1,0) [0|255] "km/h"  LOG,OPUS
+ SG_ Speed_actual : 0|8@1+ (1,0) [0|255] "km/h"  LOG,OPUS
+
+BO_ 1282 VCU2LOG_Status: 5 VCU
+ SG_ Cones_count_all : 23|17@1+ (1,0) [0|131071] ""  LOG,OPUS
+ SG_ Cones_count_actual : 15|8@1+ (1,0) [0|255] ""  LOG,OPUS
+ SG_ Lap_counter : 11|4@1+ (1,0) [0|15] ""  LOG,OPUS
+ SG_ State_service_brake : 9|2@1+ (1,0) [0|3] ""  LOG,OPUS
+ SG_ State_steering : 8|1@1- (1,0) [0|1] ""  LOG,OPUS
+ SG_ AMI_STATE : 5|3@1+ (1,0) [0|7] ""  LOG,OPUS
+ SG_ State_EBS : 3|2@1+ (1,0) [0|3] ""  LOG,OPUS
+ SG_ State_ASSI : 0|3@1+ (1,0) [0|7] ""  LOG,OPUS
+
+BO_ 1299 AI2VCU_Steer: 2 AI
+ SG_ STEER_REQUEST : 0|16@1- (0.1,0) [-21|21] "deg"  LOG,OPUS,VCU
+
+BO_ 1300 AI2VCU_Brake: 2 AI
+ SG_ HYD_PRESS_R_REQ_pct : 8|8@1+ (0.5,0) [0|100] "%"  LOG,OPUS,VCU
+ SG_ HYD_PRESS_F_REQ_pct : 0|8@1+ (0.5,0) [0|100] "%"  LOG,OPUS,VCU
+
+BO_ 1316 VCU2AI_Brake: 5 VCU
+ SG_ STATUS_EBS : 36|4@1+ (1,0) [0|15] ""  LOG,AI,OPUS
+ SG_ STATUS_BRK : 32|4@1+ (1,0) [0|15] ""  LOG,AI,OPUS
+ SG_ HYD_PRESS_R_REQ_pct : 24|8@1+ (0.5,0) [0|100] "%"  LOG,AI,OPUS
+ SG_ HYD_PRESS_R_pct : 16|8@1+ (0.5,0) [0|100] "%"  LOG,AI,OPUS
+ SG_ HYD_PRESS_F_REQ_pct : 8|8@1+ (0.5,0) [0|100] "%"  LOG,AI,OPUS
+ SG_ HYD_PRESS_F_pct : 0|8@1+ (0.5,0) [0|100] "%"  LOG,AI,OPUS
+
+BO_ 1313 VCU2AI_Drive_F: 6 VCU
+ SG_ FRONT_AXLE_TRQ_REQUEST : 16|16@1+ (0.1,0) [0|195] "Nm"  OPUS,LOG,AI
+ SG_ FRONT_AXLE_TRQ_MAX : 32|16@1+ (0.1,0) [0|195] "Nm"  OPUS,LOG,AI
+ SG_ FRONT_AXLE_TRQ : 0|16@1- (0.1,0) [-195|195] "Nm"  OPUS,LOG,AI
+
+BO_ 1297 AI2VCU_Drive_F: 4 AI
+ SG_ FRONT_MOTOR_SPEED_MAX : 16|16@1+ (1,0) [0|4000] "rpm"  OPUS,LOG,VCU
+ SG_ FRONT_AXLE_TRQ_REQUEST : 0|16@1+ (0.1,0) [0|195] "Nm"  OPUS,LOG,VCU
+
+BO_ 1298 AI2VCU_Drive_R: 4 AI
+ SG_ REAR_MOTOR_SPEED_MAX : 16|16@1+ (1,0) [0|4000] "rpm"  LOG,OPUS,VCU
+ SG_ REAR_AXLE_TRQ_REQUEST : 0|16@1+ (0.1,0) [0|195] "Nm"  LOG,OPUS,VCU
+
+BO_ 1314 VCU2AI_Drive_R: 6 VCU
+ SG_ REAR_AXLE_TRQ_MAX_Nm : 32|16@1+ (0.1,0) [0|195] "Nm"  LOG,AI,OPUS
+ SG_ REAR_AXLE_TRQ_REQUEST_Nm : 16|16@1+ (0.1,0) [0|195] "Nm"  LOG,AI,OPUS
+ SG_ REAR_AXLE_TRQ_Nm : 0|16@1- (0.1,0) [-195|195] "Nm"  LOG,AI,OPUS
+
+BO_ 129 RES_EMCY: 8 RES
+ SG_ RES_Fault_ID : 24|16@1+ (1,0) [0|65535] ""  LOG,OPUS,VCU
+ SG_ RES_ER : 16|8@1+ (1,0) [0|255] ""  LOG,OPUS,VCU
+ SG_ RES_EEC : 0|16@1+ (1,0) [0|65535] ""  LOG,OPUS,VCU
+
+BO_ 385 RES_TPDO: 8 RES
+ SG_ RADIO_STRENGTH : 48|8@1+ (1,0) [0|255] "%"  LOG,OPUS,VCU
+ SG_ K3_SWITCH_STATUS : 2|1@1- (1,0) [0|1] ""  LOG,OPUS,VCU
+ SG_ K2_SWITCH_GO_STATUS : 1|1@1- (1,0) [0|1] ""  LOG,OPUS,VCU
+ SG_ ESTOP_STATUS : 0|1@1- (1,0) [0|1] ""  LOG,OPUS,VCU
+
+BO_ 1318 VCU2AI_Wheel_counts: 8 VCU
+ SG_ RR_PULSE_COUNT : 48|16@1+ (1,0) [0|65535] ""  LOG,AI,OPUS
+ SG_ RL_PULSE_COUNT : 32|16@1+ (1,0) [0|65535] ""  LOG,AI,OPUS
+ SG_ FR_PULSE_COUNT : 16|16@1+ (1,0) [0|65535] ""  LOG,AI,OPUS
+ SG_ FL_PULSE_COUNT : 0|16@1+ (1,0) [0|65535] ""  LOG,AI,OPUS
+
+BO_ 291 OPUS2VCU_FB: 1 OPUS
+ SG_ CHARGE_REQ : 5|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ BRK_DISCH_REQ : 4|1@1- (1,0) [0|1] ""  OPUS,LOG,VCU
+ SG_ AMI_STATE : 0|4@1+ (1,0) [0|15] ""  OPUS,LOG,VCU
+
+BO_ 644 UMB_PDO2: 4 JOYSTICK
+ SG_ XPOS : 16|16@1+ (1,0) [0|255] ""  LOG,OPUS,VCU
+ SG_ YPOS : 0|16@1+ (1,0) [0|255] ""  LOG,OPUS,VCU
+
+BO_ 132 UMB_EMCY: 8 JOYSTICK
+ SG_ UMB_Fault_ID : 24|16@1+ (1,0) [0|65535] ""  LOG,OPUS,VCU
+ SG_ UMB_ER : 16|8@1+ (1,0) [0|255] ""  LOG,OPUS,VCU
+ SG_ UMB_EEC : 0|16@1+ (1,0) [0|65535] ""  LOG,OPUS,VCU
+
+BO_ 128 SYNC: 0 VCU
+
+BO_ 388 UMB_PDO1: 2 JOYSTICK
+ SG_ BTN_BTM : 3|1@1- (1,0) [0|1] ""  LOG,OPUS,VCU
+ SG_ BTN_TOP : 0|1@1- (1,0) [0|1] ""  LOG,OPUS,VCU
+
+BO_ 1281 AI2LOG_Dynamics2: 6 PCAN_GPS
+ SG_ Accel_longitudinal_mps2 : 0|16@1- (0.00195313,0) [-64|63.998] "m/s^2"  OPUS,LOG
+ SG_ Accel_lateral_mps2 : 16|16@1- (0.00195313,0) [-64|63.998] "m/s^2"  OPUS,LOG
+ SG_ Yaw_rate_degps : 32|16@1- (0.0078125,0) [-256|255.992] "deg/s"  OPUS,LOG
+
+BO_ 1536 BMC_Acceleration: 8 PCAN_GPS
+ SG_ Acceleration_X : 0|16@1- (3.91,0) [-20000|20000] "mG"  OPUS,LOG,AI
+ SG_ Acceleration_Y : 16|16@1- (3.91,0) [-20000|20000] "mG"  OPUS,LOG,AI
+ SG_ Acceleration_Z : 32|16@1- (3.91,0) [-20000|20000] "mG"  OPUS,LOG,AI
+ SG_ Temperature : 48|8@1- (0.5,24) [-40|87.5] "°C"  OPUS,LOG,AI
+ SG_ VerticalAxis : 56|2@1+ (1,0) [0|3] ""  OPUS,LOG,AI
+ SG_ Orientation : 58|3@1+ (1,0) [0|7] ""  OPUS,LOG,AI
+
+BO_ 1576 BMC_MagneticField: 6 PCAN_GPS
+ SG_ MagneticField_X : 0|16@1- (0.3,0) [-9830.4|9830.1] "µT"  OPUS,LOG,AI
+ SG_ MagneticField_Y : 16|16@1- (0.3,0) [-9830.4|9830.1] "µT"  OPUS,LOG,AI
+ SG_ MagneticField_Z : 32|16@1- (0.3,0) [-9830.4|9830.1] "µT"  OPUS,LOG,AI
+
+BO_ 1552 L3GD20_Rotation_A: 8 PCAN_GPS
+ SG_ Rotation_X : 0|32@1- (1,0) [-4000|4000] "°/s"  OPUS,LOG,AI
+ SG_ Rotation_Y : 32|32@1- (1,0) [-4000|4000] "°/s"  OPUS,LOG,AI
+
+BO_ 1553 L3GD20_Rotation_B: 4 PCAN_GPS
+ SG_ Rotation_Z : 0|32@1- (1,0) [-4000|4000] "°/s"  OPUS,LOG,AI
+
+BO_ 1568 GPS_Status: 3 PCAN_GPS
+ SG_ GPS_AntennaStatus : 0|8@1+ (1,0) [0|255] ""  OPUS,LOG,AI
+ SG_ GPS_NumSatellites : 8|8@1+ (1,0) [0|255] ""  OPUS,LOG,AI
+ SG_ GPS_NavigationMethod : 16|8@1+ (1,0) [0|255] ""  OPUS,LOG,AI
+
+BO_ 1569 GPS_CourseSpeed: 8 PCAN_GPS
+ SG_ GPS_Course : 0|32@1- (1,0) [-3.4E+038|3.4E+038] "°"  OPUS,LOG,AI
+ SG_ GPS_Speed : 32|32@1- (1,0) [-3.4E+038|3.4E+038] "km/h"  OPUS,LOG,AI
+
+BO_ 1570 GPS_PositionLongitude: 7 PCAN_GPS
+ SG_ GPS_Longitude_Degree : 32|16@1+ (1,0) [0|359] "°"  OPUS,LOG,AI
+ SG_ GPS_Longitude_Minutes : 0|32@1- (1,0) [-3.4E+038|3.4E+038] "'"  OPUS,LOG,AI
+ SG_ GPS_IndicatorEW : 48|8@1+ (1,0) [0|255] ""  OPUS,LOG,AI
+
+BO_ 1571 GPS_PositionLatitude: 7 PCAN_GPS
+ SG_ GPS_Latitude_Degree : 32|16@1+ (1,0) [0|359] "°"  OPUS,LOG,AI
+ SG_ GPS_Latitude_Minutes : 0|32@1- (1,0) [-3.4E+038|3.4E+038] "'"  OPUS,LOG,AI
+ SG_ GPS_IndicatorNS : 48|8@1+ (1,0) [0|255] ""  OPUS,LOG,AI
+
+BO_ 1572 GPS_PositionAltitude: 4 PCAN_GPS
+ SG_ GPS_Altitude : 0|32@1- (1,0) [-3.4E+038|3.4E+038] "m"  OPUS,LOG,AI
+
+BO_ 1573 GPS_Delusions_A: 8 PCAN_GPS
+ SG_ GPS_PDOP : 0|32@1- (1,0) [-3.4E+038|3.4E+038] ""  OPUS,LOG,AI
+ SG_ GPS_HDOP : 32|32@1- (1,0) [-3.4E+038|3.4E+038] ""  OPUS,LOG,AI
+
+BO_ 1574 GPS_Delusions_B: 4 PCAN_GPS
+ SG_ GPS_VDOP : 0|32@1- (1,0) [-3.4E+038|3.4E+038] ""  OPUS,LOG,AI
+
+BO_ 1575 GPS_DateTime: 6 PCAN_GPS
+ SG_ UTC_Year : 0|8@1+ (1,0) [0|255] ""  OPUS,LOG,AI
+ SG_ UTC_Month : 8|8@1+ (1,0) [0|255] ""  OPUS,LOG,AI
+ SG_ UTC_DayOfMonth : 16|8@1+ (1,0) [0|255] ""  OPUS,LOG,AI
+ SG_ UTC_Hour : 24|8@1+ (1,0) [0|255] ""  OPUS,LOG,AI
+ SG_ UTC_Minute : 32|8@1+ (1,0) [0|255] ""  OPUS,LOG,AI
+ SG_ UTC_Second : 40|8@1+ (1,0) [0|255] ""  OPUS,LOG,AI
+
+BO_ 1584 IO: 1 PCAN_GPS
+ SG_ Din1_Status : 0|1@1+ (1,0) [0|1] ""  OPUS,LOG,AI
+ SG_ Din2_Status : 1|1@1+ (1,0) [0|1] ""  OPUS,LOG,AI
+ SG_ Dout_Status : 2|1@1+ (1,0) [0|1] ""  OPUS,LOG,AI
+ SG_ SD_Present : 3|1@1+ (1,0) [0|1] ""  OPUS,LOG,AI
+ SG_ GPS_PowerStatus : 4|1@1+ (1,0) [0|1] ""  OPUS,LOG,AI
+ SG_ Device_ID : 5|3@1+ (1,0) [0|7] ""  OPUS,LOG,AI
+
+BO_ 1600 RTC_DateTime: 8 PCAN_GPS
+ SG_ RTC_Sec : 0|8@1+ (1,0) [0|255] ""  OPUS,LOG,AI
+ SG_ RTC_Min : 8|8@1+ (1,0) [0|255] ""  OPUS,LOG,AI
+ SG_ RTC_Hour : 16|8@1+ (1,0) [0|255] ""  OPUS,LOG,AI
+ SG_ RTC_DayOfWeek : 24|8@1+ (1,0) [0|255] ""  OPUS,LOG,AI
+ SG_ RTC_DayOfMonth : 32|8@1+ (1,0) [0|255] ""  OPUS,LOG,AI
+ SG_ RTC_Month : 40|8@1+ (1,0) [0|255] ""  OPUS,LOG,AI
+ SG_ RTC_Year : 48|16@1+ (1,0) [0|65535] ""  OPUS,LOG,AI
+
+BO_ 1616 Out_IO: 1 PCAN_GPS
+ SG_ Dout_Set : 0|1@1+ (1,0) [0|1] ""  OPUS,LOG,AI
+ SG_ GPS_SetPower : 1|1@1+ (1,0) [0|1] ""  OPUS,LOG,AI
+
+BO_ 1617 Out_PowerOff: 1 PCAN_GPS
+ SG_ Device_PowerOff : 0|1@1+ (1,0) [0|1] ""  OPUS,LOG,AI
+
+BO_ 1618 Out_Gyro: 1 PCAN_GPS
+ SG_ Gyro_SetScale : 0|2@1+ (1,0) [0|3] "°/s"  OPUS,LOG,AI
+
+BO_ 1619 Out_BMC_AccScale: 1 PCAN_GPS
+ SG_ Acc_SetScale : 0|3@1+ (1,0) [0|7] ""  OPUS,LOG,AI
+
+BO_ 1620 Out_SaveConfig: 1 PCAN_GPS
+ SG_ Config_SaveToEEPROM : 0|1@1+ (1,0) [0|1] ""  OPUS,LOG,AI
+
+BO_ 1621 Out_RTC_SetTime: 8 PCAN_GPS
+ SG_ RTC_SetSec : 0|8@1+ (1,0) [0|59] ""  OPUS,LOG,AI
+ SG_ RTC_SetMin : 8|8@1+ (1,0) [0|59] ""  OPUS,LOG,AI
+ SG_ RTC_SetHour : 16|8@1+ (1,0) [0|23] ""  OPUS,LOG,AI
+ SG_ RTC_SetDayOfWeek : 24|8@1+ (1,0) [0|6] ""  OPUS,LOG,AI
+ SG_ RTC_SetDayOfMonth : 32|8@1+ (1,0) [1|31] ""  OPUS,LOG,AI
+ SG_ RTC_SetMonth : 40|8@1+ (1,0) [1|12] ""  OPUS,LOG,AI
+ SG_ RTC_SetYear : 48|16@1+ (1,0) [1900|2099] ""  OPUS,LOG,AI
+
+BO_ 1622 Out_RTC_TimeFromGPS: 1 PCAN_GPS
+ SG_ RTC_SetTimeFromGPS : 0|1@1+ (1,0) [0|1] ""  OPUS,LOG,AI
+
+BO_ 1623 Out_Acc_FastCalibration: 4 PCAN_GPS
+ SG_ Acc_SetCalibTarget_X : 0|2@1+ (1,0) [0|3] ""  OPUS,LOG,AI
+ SG_ Acc_SetCalibTarget_Y : 8|2@1+ (1,0) [0|3] ""  OPUS,LOG,AI
+ SG_ Acc_SetCalibTarget_Z : 16|2@1+ (1,0) [0|3] ""  OPUS,LOG,AI
+ SG_ Acc_StartFastCalib : 24|1@1+ (1,0) [0|1] ""  OPUS,LOG,AI
+
+
+
+CM_ BU_ AI "AI Computer (NVIDIA Drive PX2)";
+CM_ BU_ JOYSTICK "Umbilical controller";
+CM_ BU_ VCU "Vehicle Control Unit";
+CM_ BU_ OPUS "Display screen";
+CM_ BU_ RES "Remote Emergency Stop";
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+CM_ SG_ 770 EBS_TEST_BITFIELD_LATCHED "Rear left wheel speed pulse count";
+CM_ SG_ 770 EBS_TEST_BITFIELD "Rear left wheel speed pulse count";
+CM_ SG_ 1312 BRAKE_PLAUSIBILITY_FAULT "Brake plausibility fault";
+CM_ SG_ 1312 BMS_FAULT "BMS fault detected";
+CM_ SG_ 1312 SHUTDOWN_CAUSE "Enumerated list of shutdown faults";
+CM_ SG_ 1312 MISSION_STATUS_FAULT "Autonomous mission status fault";
+CM_ SG_ 1312 AUTONOMOUS_BRAKING_FAULT "Braking in Autonomous Driving mode fault";
+CM_ SG_ 1312 CHARGE_PROCEDURE_FAULT "Battery charging procedure fault";
+CM_ SG_ 1312 WARN_BATT_SOC_LOW "Low traction battery SOC warning";
+CM_ SG_ 1312 WARN_BATT_TEMP_HIGH "High traction battery temperature warning";
+CM_ SG_ 1312 AI_COMMS_LOST "AI CAN communications fault";
+CM_ SG_ 1312 OFFBOARD_CHARGER_FAULT "Offboard charger fault";
+CM_ SG_ 1312 EBS_FAULT "EBS fault";
+CM_ SG_ 1312 HVIL_SHORT_FAULT "HVIL short-circuit fault";
+CM_ SG_ 1312 HVIL_OPEN_FAULT "HVIL open-circuit fault";
+CM_ SG_ 1312 AI_ESTOP_REQUEST "AI system E-stop request";
+CM_ SG_ 1312 GO_SIGNAL "Autonomous System \"Go\" signal";
+CM_ SG_ 1312 AMI_STATE "State of the Mission Indicator";
+CM_ SG_ 1312 HANDSHAKE "Handshake";
+CM_ SG_ 1312 WARNING_STATUS "System warning status";
+CM_ SG_ 1312 FAULT_STATUS "System fault status";
+CM_ SG_ 1312 SHUTDOWN_REQUEST "Shutdown request to AI";
+CM_ SG_ 1312 STEERING_STATUS "State of the steering system";
+CM_ SG_ 1312 AS_STATE "State of the Autonomous System";
+CM_ SG_ 1312 TS_SWITCH_STATUS "Tractive System switch status";
+CM_ SG_ 1312 AS_SWITCH_STATUS "Autonomous System switch status";
+CM_ SG_ 1315 ANGLE_REQUEST "Steer Angle Request";
+CM_ SG_ 1315 ANGLE_MAX "Steer Angle Max";
+CM_ SG_ 1315 ANGLE "Steer Angle";
+CM_ SG_ 1296 CONES_COUNT_ALL "Total number of cones detected";
+CM_ SG_ 1296 CONES_COUNT_ACTUAL "Number of cones detected";
+CM_ SG_ 1296 LAP_COUNTER "Lap counter";
+CM_ SG_ 1296 HANDSHAKE "Handshake";
+CM_ SG_ 1296 MISSION_STATUS "Autonomous mission status";
+CM_ SG_ 1296 ESTOP_REQUEST "Shutdown request to VCU";
+CM_ SG_ 1296 DIRECTION_REQUEST "Requested vehicle direction";
+CM_ SG_ 1300 HYD_PRESS_R_REQ_pct "Requested rear axle hydraulic brake pressure";
+CM_ SG_ 1300 HYD_PRESS_F_REQ_pct "Requested front axle hydraulic brake pressure";
+CM_ SG_ 1316 STATUS_EBS "Emergency brake status";
+CM_ SG_ 1316 STATUS_BRK "Braking system status";
+CM_ SG_ 1316 HYD_PRESS_R_REQ_pct "Requested rear axle hydraulic brake pressure";
+CM_ SG_ 1316 HYD_PRESS_R_pct "Rear axle hydraulic brake pressure";
+CM_ SG_ 1316 HYD_PRESS_F_REQ_pct "Requested front axle hydraulic brake pressure";
+CM_ SG_ 1316 HYD_PRESS_F_pct "Front axle hydraulic brake pressure";
+CM_ SG_ 1298 REAR_AXLE_TRQ_REQUEST "Requested rear axle torque";
+CM_ SG_ 1314 REAR_AXLE_TRQ_MAX_Nm "Maximum rear axle drive torque";
+CM_ SG_ 1314 REAR_AXLE_TRQ_REQUEST_Nm "Requested rear axle torque";
+CM_ SG_ 1314 REAR_AXLE_TRQ_Nm "Current rear axle torque";
+CM_ SG_ 1318 RR_PULSE_COUNT "Rear right wheel speed pulse count";
+CM_ SG_ 1318 RL_PULSE_COUNT "Rear left wheel speed pulse count";
+CM_ SG_ 1318 FR_PULSE_COUNT "Front right wheel speed pulse count";
+CM_ SG_ 1318 FL_PULSE_COUNT "Front left wheel speed pulse count";
+CM_ SG_ 1620 Config_SaveToEEPROM "Saves sensor ranges and calibration targets to EERPOM to restore them after startup";
+CM_ SG_ 1622 RTC_SetTimeFromGPS "Note: GPS time does not know the day of week!";
+BA_DEF_  "BusType" STRING ;
+BA_DEF_  "GenEnvVarEndingDsp" STRING ;
+BA_DEF_  "GenEnvVarEndingSnd" STRING ;
+BA_DEF_  "GenEnvVarPrefix" STRING ;
+BA_DEF_ BU_  "GenNodAutoGenSnd" ENUM  "No","Yes";
+BA_DEF_ BU_  "GenNodAutoGenDsp" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 10000;
+BA_DEF_ SG_  "GenSigStartValue" FLOAT 1.17549E-038 3.4E+038;
+BA_DEF_ SG_  "GenSigAutoGenSnd" ENUM  "No","Yes";
+BA_DEF_ SG_  "GenSigAutoGenDsp" ENUM  "No","Yes";
+BA_DEF_ SG_  "GenSigEnvVarType" ENUM  "int","float","undef";
+BA_DEF_ SG_  "GenSigEVName" STRING ;
+BA_DEF_DEF_  "BusType" "CAN";
+BA_DEF_DEF_  "GenEnvVarEndingDsp" "Dsp";
+BA_DEF_DEF_  "GenEnvVarEndingSnd" "Snd";
+BA_DEF_DEF_  "GenEnvVarPrefix" "Env";
+BA_DEF_DEF_  "GenNodAutoGenSnd" "Yes";
+BA_DEF_DEF_  "GenNodAutoGenDsp" "Yes";
+BA_DEF_DEF_  "GenMsgCycleTime" 5;
+BA_DEF_DEF_  "GenSigStartValue" 1.17549E-038;
+BA_DEF_DEF_  "GenSigAutoGenSnd" "";
+BA_DEF_DEF_  "GenSigAutoGenDsp" "";
+BA_DEF_DEF_  "GenSigEnvVarType" "undef";
+BA_DEF_DEF_  "GenSigEVName" "";
+BA_ "BusType" "CAN";
+BA_ "GenMsgCycleTime" BO_ 770 10;
+BA_ "GenMsgCycleTime" BO_ 769 10;
+BA_ "GenMsgCycleTime" BO_ 768 10;
+BA_ "GenMsgCycleTime" BO_ 0 100;
+BA_ "GenMsgCycleTime" BO_ 1312 10;
+BA_ "GenMsgCycleTime" BO_ 1315 10;
+BA_ "GenMsgCycleTime" BO_ 1317 10;
+BA_ "GenMsgCycleTime" BO_ 1296 10;
+BA_ "GenMsgCycleTime" BO_ 1280 100;
+BA_ "GenMsgCycleTime" BO_ 1282 100;
+BA_ "GenMsgCycleTime" BO_ 1299 10;
+BA_ "GenMsgCycleTime" BO_ 1300 10;
+BA_ "GenMsgCycleTime" BO_ 1316 10;
+BA_ "GenMsgCycleTime" BO_ 1313 10;
+BA_ "GenMsgCycleTime" BO_ 1297 10;
+BA_ "GenMsgCycleTime" BO_ 1298 10;
+BA_ "GenMsgCycleTime" BO_ 1314 10;
+BA_ "GenMsgCycleTime" BO_ 129 10;
+BA_ "GenMsgCycleTime" BO_ 385 10;
+BA_ "GenMsgCycleTime" BO_ 1318 10;
+BA_ "GenMsgCycleTime" BO_ 291 100;
+BA_ "GenMsgCycleTime" BO_ 644 100;
+BA_ "GenMsgCycleTime" BO_ 132 100;
+BA_ "GenMsgCycleTime" BO_ 128 5;
+BA_ "GenMsgCycleTime" BO_ 388 5;
+BA_ "GenSigStartValue" SG_ 769 EBS_REAR_CALIPER_PRESS 1.17549E-038;
+BA_ "GenSigStartValue" SG_ 769 EBS_FRONT_CALIPER_PRESS 1.17549E-038;
+BA_ "GenSigStartValue" SG_ 769 EBS_REAR_ACC_PRESS 1.17549E-038;
+BA_ "GenSigStartValue" SG_ 769 EBS_FRONT_ACC_PRESS 1.17549E-038;
+BA_ "GenSigStartValue" SG_ 768 LEM_500A_ADC 2500;
+BA_ "GenSigStartValue" SG_ 768 AUX_HV 1.17549E-035;
+BA_ "GenSigStartValue" SG_ 768 VBAT_ADC 1.17549E-035;
+BA_ "GenSigStartValue" SG_ 768 KL15_ADC 1.17549E-035;
+BA_ "GenSigStartValue" SG_ 1312 AMI_STATE 0;
+BA_ "GenSigStartValue" SG_ 1312 HANDSHAKE 0;
+BA_ "GenSigStartValue" SG_ 1312 WARNING_STATUS 0;
+BA_ "GenSigStartValue" SG_ 1312 FAULT_STATUS 0;
+BA_ "GenSigStartValue" SG_ 1312 SHUTDOWN_REQUEST 0;
+BA_ "GenSigStartValue" SG_ 1312 STEERING_STATUS 0;
+BA_ "GenSigStartValue" SG_ 1312 AS_STATE 0;
+BA_ "GenSigStartValue" SG_ 1312 TS_SWITCH_STATUS 0;
+BA_ "GenSigStartValue" SG_ 1312 AS_SWITCH_STATUS 0;
+BA_ "GenSigStartValue" SG_ 1296 CONES_COUNT_ALL 0;
+BA_ "GenSigStartValue" SG_ 1296 CONES_COUNT_ACTUAL 0;
+BA_ "GenSigStartValue" SG_ 1296 LAP_COUNTER 0;
+BA_ "GenSigStartValue" SG_ 1296 HANDSHAKE 0;
+BA_ "GenSigStartValue" SG_ 1296 MISSION_STATUS 0;
+BA_ "GenSigStartValue" SG_ 1296 ESTOP_REQUEST 0;
+BA_ "GenSigStartValue" SG_ 1296 DIRECTION_REQUEST 0;
+BA_ "GenSigStartValue" SG_ 1280 Drive_trq_target_pct 0;
+BA_ "GenSigStartValue" SG_ 1280 Drive_trq_actual_pct 0;
+BA_ "GenSigStartValue" SG_ 1280 Brake_target_pct 0;
+BA_ "GenSigStartValue" SG_ 1280 Brake_actual_pct 0;
+BA_ "GenSigStartValue" SG_ 1282 Cones_count_all 0;
+BA_ "GenSigStartValue" SG_ 1282 Cones_count_actual 0;
+BA_ "GenSigStartValue" SG_ 1282 Lap_counter 0;
+BA_ "GenSigStartValue" SG_ 1282 State_service_brake 0;
+BA_ "GenSigStartValue" SG_ 1282 State_steering 0;
+BA_ "GenSigStartValue" SG_ 1282 AMI_STATE 0;
+BA_ "GenSigStartValue" SG_ 1282 State_EBS 0;
+BA_ "GenSigStartValue" SG_ 1282 State_ASSI 0;
+BA_ "GenSigStartValue" SG_ 1300 HYD_PRESS_F_REQ_pct 0;
+BA_ "GenSigStartValue" SG_ 1316 HYD_PRESS_F_REQ_pct 0;
+BA_ "GenSigStartValue" SG_ 1316 HYD_PRESS_F_pct 0;
+BA_ "GenSigStartValue" SG_ 1298 REAR_AXLE_TRQ_REQUEST 0;
+BA_ "GenSigStartValue" SG_ 1314 REAR_AXLE_TRQ_MAX_Nm 0;
+BA_ "GenSigStartValue" SG_ 1314 REAR_AXLE_TRQ_REQUEST_Nm 0;
+BA_ "GenSigStartValue" SG_ 1314 REAR_AXLE_TRQ_Nm 0;
+BA_ "GenSigStartValue" SG_ 291 CHARGE_REQ 1.17549E-038;
+BA_ "GenSigStartValue" SG_ 1536 Acceleration_X 0;
+BA_ "GenSigStartValue" SG_ 1536 Acceleration_Y 0;
+BA_ "GenSigStartValue" SG_ 1536 Acceleration_Z 0;
+BA_ "GenSigStartValue" SG_ 1536 Temperature -48;
+BA_ "GenSigStartValue" SG_ 1536 VerticalAxis 0;
+BA_ "GenSigStartValue" SG_ 1536 Orientation 0;
+BA_ "GenSigStartValue" SG_ 1576 MagneticField_X 0;
+BA_ "GenSigStartValue" SG_ 1576 MagneticField_Y 0;
+BA_ "GenSigStartValue" SG_ 1576 MagneticField_Z 0;
+BA_ "GenSigStartValue" SG_ 1552 Rotation_X 0;
+BA_ "GenSigStartValue" SG_ 1552 Rotation_Y 0;
+BA_ "GenSigStartValue" SG_ 1553 Rotation_Z 0;
+BA_ "GenSigStartValue" SG_ 1568 GPS_AntennaStatus 0;
+BA_ "GenSigStartValue" SG_ 1568 GPS_NumSatellites 0;
+BA_ "GenSigStartValue" SG_ 1568 GPS_NavigationMethod 0;
+BA_ "GenSigStartValue" SG_ 1569 GPS_Course 0;
+BA_ "GenSigStartValue" SG_ 1569 GPS_Speed 0;
+BA_ "GenSigStartValue" SG_ 1570 GPS_Longitude_Degree 0;
+BA_ "GenSigStartValue" SG_ 1570 GPS_Longitude_Minutes 0;
+BA_ "GenSigStartValue" SG_ 1570 GPS_IndicatorEW 0;
+BA_ "GenSigStartValue" SG_ 1571 GPS_Latitude_Degree 0;
+BA_ "GenSigStartValue" SG_ 1571 GPS_Latitude_Minutes 0;
+BA_ "GenSigStartValue" SG_ 1571 GPS_IndicatorNS 0;
+BA_ "GenSigStartValue" SG_ 1572 GPS_Altitude 0;
+BA_ "GenSigStartValue" SG_ 1573 GPS_PDOP 0;
+BA_ "GenSigStartValue" SG_ 1573 GPS_HDOP 0;
+BA_ "GenSigStartValue" SG_ 1574 GPS_VDOP 0;
+BA_ "GenSigStartValue" SG_ 1575 UTC_Year 0;
+BA_ "GenSigStartValue" SG_ 1575 UTC_Month 0;
+BA_ "GenSigStartValue" SG_ 1575 UTC_DayOfMonth 0;
+BA_ "GenSigStartValue" SG_ 1575 UTC_Hour 0;
+BA_ "GenSigStartValue" SG_ 1575 UTC_Minute 0;
+BA_ "GenSigStartValue" SG_ 1575 UTC_Second 0;
+BA_ "GenSigStartValue" SG_ 1584 Din1_Status 0;
+BA_ "GenSigStartValue" SG_ 1584 Din2_Status 0;
+BA_ "GenSigStartValue" SG_ 1584 Dout_Status 0;
+BA_ "GenSigStartValue" SG_ 1584 SD_Present 0;
+BA_ "GenSigStartValue" SG_ 1584 GPS_PowerStatus 0;
+BA_ "GenSigStartValue" SG_ 1584 Device_ID 0;
+BA_ "GenSigStartValue" SG_ 1600 RTC_Sec 0;
+BA_ "GenSigStartValue" SG_ 1600 RTC_Min 0;
+BA_ "GenSigStartValue" SG_ 1600 RTC_Hour 0;
+BA_ "GenSigStartValue" SG_ 1600 RTC_DayOfWeek 0;
+BA_ "GenSigStartValue" SG_ 1600 RTC_DayOfMonth 0;
+BA_ "GenSigStartValue" SG_ 1600 RTC_Month 0;
+BA_ "GenSigStartValue" SG_ 1600 RTC_Year 0;
+BA_ "GenSigStartValue" SG_ 1616 Dout_Set 0;
+BA_ "GenSigStartValue" SG_ 1616 GPS_SetPower 1;
+BA_ "GenSigStartValue" SG_ 1617 Device_PowerOff 0;
+BA_ "GenSigStartValue" SG_ 1618 Gyro_SetScale 0;
+BA_ "GenSigStartValue" SG_ 1619 Acc_SetScale 1;
+BA_ "GenSigStartValue" SG_ 1620 Config_SaveToEEPROM 0;
+BA_ "GenSigStartValue" SG_ 1621 RTC_SetSec 0;
+BA_ "GenSigStartValue" SG_ 1621 RTC_SetMin 0;
+BA_ "GenSigStartValue" SG_ 1621 RTC_SetHour 0;
+BA_ "GenSigStartValue" SG_ 1621 RTC_SetDayOfWeek 0;
+BA_ "GenSigStartValue" SG_ 1621 RTC_SetDayOfMonth 0;
+BA_ "GenSigStartValue" SG_ 1621 RTC_SetMonth 0;
+BA_ "GenSigStartValue" SG_ 1621 RTC_SetYear 0;
+BA_ "GenSigStartValue" SG_ 1622 RTC_SetTimeFromGPS 0;
+BA_ "GenSigStartValue" SG_ 1623 Acc_SetCalibTarget_X 0;
+BA_ "GenSigStartValue" SG_ 1623 Acc_SetCalibTarget_Y 0;
+BA_ "GenSigStartValue" SG_ 1623 Acc_SetCalibTarget_Z 0;
+BA_ "GenSigStartValue" SG_ 1623 Acc_StartFastCalib 0;
+VAL_ 0 CMD 130 "Reset communication" 129 "Reset node" 128 "Pre-operational" 2 "Stop" 1 "Start" ;
+VAL_ 0 NODE_ID 4 "UMB_NODE" 1 "RES_NODE" 0 "ALL_NODES" ;
+VAL_ 1312 EBS_STATE 4 "EBS_DISCHARGING" 255 "EBS_FAULT" 0 "EBS_INIT" 3 "EBS_TRIGGERED" 2 "EBS_ARMED" 1 "EBS_CHARGING" ;
+VAL_ 1312 TS_STATE 255 "TS_FAULT" 0 "TS_INIT" 4 "TS_SHUTDOWN" 3 "TS_RUNNING" 2 "TS_ACTIVATE" 1 "TS_PRECHARGE" ;
+VAL_ 1312 OP_STATE 255 "OP_FAULT" 0 "OP_INIT" 3 "OP_CHARGE" 2 "OP_AUTO" 1 "OP_PUSHBAR" ;
+VAL_ 1312 BRAKE_PLAUSIBILITY_FAULT 1 "TRUE" 0 "FALSE" ;
+VAL_ 1312 BMS_FAULT 1 "TRUE" 0 "FALSE" ;
+VAL_ 1312 SHUTDOWN_CAUSE 10 "BMS_FAULT" 9 "CHARGE_PROCEDURE_FAULT" 8 "MISSION_STATUS_FAULT" 7 "AUTONOMOUS_BRAKING_FAULT" 6 "AI_COMMS_FAULT" 5 "OFFBOARD_CHARGER_FAULT" 4 "EBS_FAULT" 3 "HVIL_SHORT_FAULT" 2 "HVIL_OPEN_FAULT" 1 "AI_COMPUTER_REQUEST" 0 "NO_SHUTDOWN" ;
+VAL_ 1312 MISSION_STATUS_FAULT 1 "TRUE" 0 "FALSE" ;
+VAL_ 1312 AUTONOMOUS_BRAKING_FAULT 1 "TRUE" 0 "FALSE" ;
+VAL_ 1312 CHARGE_PROCEDURE_FAULT 1 "TRUE" 0 "FALSE" ;
+VAL_ 1312 WARN_BATT_SOC_LOW 1 "TRUE" 0 "FALSE" ;
+VAL_ 1312 WARN_BATT_TEMP_HIGH 1 "TRUE" 0 "FALSE" ;
+VAL_ 1312 AI_COMMS_LOST 1 "TRUE" 0 "FALSE" ;
+VAL_ 1312 OFFBOARD_CHARGER_FAULT 1 "TRUE" 0 "FALSE" ;
+VAL_ 1312 EBS_FAULT 1 "TRUE" 0 "FALSE" ;
+VAL_ 1312 HVIL_SHORT_FAULT 1 "TRUE" 0 "FALSE" ;
+VAL_ 1312 HVIL_OPEN_FAULT 1 "TRUE" 0 "FALSE" ;
+VAL_ 1312 AI_ESTOP_REQUEST 1 "TRUE" 0 "FALSE" ;
+VAL_ 1312 GO_SIGNAL 1 "GO" 0 "NO GO" ;
+VAL_ 1312 AMI_STATE 7 "AUTONOMOUS DEMO" 6 "STATIC INSPECTION B" 5 "STATIC INSPECTION A" 4 "TRACK DRIVE" 3 "AUTOCROSS" 2 "SKIDPAD" 1 "ACCELERATION" 0 "NOT SELECTED" ;
+VAL_ 1312 WARNING_STATUS 1 "WARNING ACTIVE" 0 "NO WARNING" ;
+VAL_ 1312 FAULT_STATUS 1 "FAULT DETECTED" 0 "NO FAULT" ;
+VAL_ 1312 SHUTDOWN_REQUEST 1 "SHUTDOWN REQUESTED" 0 "NO SHUTDOWN" ;
+VAL_ 1312 STEERING_STATUS 1 "ACTIVE" 0 "OFF" ;
+VAL_ 1312 AS_STATE 0 "AS_INIT" 5 "AS_FINISHED" 4 "EMERGENCY_BRAKE" 3 "AS_DRIVING" 2 "AS_READY" 1 "AS_OFF" ;
+VAL_ 1312 TS_SWITCH_STATUS 1 "ON" 0 "OFF" ;
+VAL_ 1312 AS_SWITCH_STATUS 1 "ON" 0 "OFF" ;
+VAL_ 1296 MISSION_STATUS 3 "FINISHED" 2 "RUNNING" 1 "SELECTED" 0 "NOT SELECTED" ;
+VAL_ 1296 ESTOP_REQUEST 1 "SHUTDOWN REQUESTED" 0 "NO SHUTDOWN" ;
+VAL_ 1296 DIRECTION_REQUEST 2 "REVERSE" 1 "FORWARD" 0 "NEUTRAL" ;
+VAL_ 1282 State_service_brake 3 "AVAILABLE" 2 "ENGAGED" 1 "DISENGAGED" ;
+VAL_ 1282 State_steering 1 "ON" 0 "OFF" ;
+VAL_ 1282 AMI_STATE 7 "AUTONOMOUS DEMO" 6 "STATIC INSPECTION B" 5 "STATIC INSPECTION A" 4 "TRACK DRIVE" 3 "AUTOCROSS" 2 "SKIDPAD" 1 "ACCELERATION" 0 "NOT SELECTED" ;
+VAL_ 1282 State_EBS 3 "TRIGGERED" 2 "ARMED" 1 "UNAVAILABLE" ;
+VAL_ 1282 State_ASSI 5 "FINISH" 4 "EMERGENCY_BRAKE" 3 "DRIVING" 2 "READY" 1 "OFF" ;
+VAL_ 1316 STATUS_EBS 3 "TRIGGERED" 2 "ARMED" 1 "UNAVAILABLE" ;
+VAL_ 1316 STATUS_BRK 4 "FAULT" 3 "SHUTDOWN_COMPLETE" 2 "SHUTTING_DOWN" 1 "READY" 0 "INITIALISING" ;
+VAL_ 385 K3_SWITCH_STATUS 1 "ON" 0 "OFF" ;
+VAL_ 385 K2_SWITCH_GO_STATUS 1 "ON" 0 "OFF" ;
+VAL_ 385 ESTOP_STATUS 1 "ON" 0 "OFF" ;
+VAL_ 291 BRK_DISCH_REQ 1 "TRUE" 0 "FALSE" ;
+VAL_ 291 AMI_STATE 7 "AUTONOMOUS DEMO" 6 "STATIC INSPECTION B" 5 "STATIC INSPECTION A" 4 "TRACK DRIVE" 3 "AUTOCROSS" 2 "SKIDPAD" 1 "ACCELERATION" 0 "NOT SELECTED" ;
+VAL_ 1536 VerticalAxis 0 "undefined" 1 "X Axis" 2 "Y Axis" 3 "Z Axis" ;
+VAL_ 1536 Orientation 0 "flat" 1 "flat upside down" 2 "landscape left" 3 "landscape right" 4 "portrait" 5 "portrait upside down" ;
+VAL_ 1568 GPS_AntennaStatus 0 "INIT" 1 "DONTKNOW" 2 "OK" 3 "SHORT" 4 "OPEN" ;
+VAL_ 1568 GPS_NavigationMethod 0 "INIT" 1 "NONE" 2 "2D" 3 "3D" ;
+VAL_ 1570 GPS_IndicatorEW 0 "INIT" 69 "East" 78 "North" 83 "South" 87 "West" ;
+VAL_ 1571 GPS_IndicatorNS 0 "INIT" 69 "East" 78 "North" 83 "South" 87 "West" ;
+VAL_ 1584 Din1_Status 0 "Off" 1 "On" ;
+VAL_ 1584 Din2_Status 0 "Off" 1 "On" ;
+VAL_ 1584 Dout_Status 0 "Off" 1 "On" ;
+VAL_ 1584 SD_Present 0 "False" 1 "True" ;
+VAL_ 1584 GPS_PowerStatus 0 "Off" 1 "On" ;
+VAL_ 1600 RTC_DayOfWeek 0 "Monday" 1 "Tuesday" 2 "Wednesday" 3 "Thursday" 4 "Friday" 5 "Saturday" 6 "Sunday" ;
+VAL_ 1616 Dout_Set 0 "Off" 1 "On" ;
+VAL_ 1616 GPS_SetPower 0 "Off" 1 "On" ;
+VAL_ 1617 Device_PowerOff 0 "False" 1 "True" ;
+VAL_ 1618 Gyro_SetScale 0 "±250 °/s" 1 "±500 °/s" 2 "±2000 °/s" 3 "±2000 °/s" ;
+VAL_ 1619 Acc_SetScale 1 "±2 G" 2 "±4 G" 3 "±8 G" 4 "±16 G" ;
+VAL_ 1620 Config_SaveToEEPROM 0 "False" 1 "True" ;
+VAL_ 1621 RTC_SetDayOfWeek 0 "Monday" 1 "Tuesday" 2 "Wednesday" 3 "Thursday" 4 "Friday" 5 "Saturday" 6 "Sunday" ;
+VAL_ 1621 RTC_SetMonth 1 "January" 2 "February" 3 "March" 4 "April" 5 "May" 6 "June" 7 "July" 8 "August" 9 "September" 10 "October" 11 "November" 12 "December" ;
+VAL_ 1622 RTC_SetTimeFromGPS 0 "False" 1 "True" ;
+VAL_ 1623 Acc_SetCalibTarget_X 0 "0 G" 1 "+1 G" 2 "-1 G" ;
+VAL_ 1623 Acc_SetCalibTarget_Y 0 "0 G" 1 "+1 G" 2 "-1 G" ;
+VAL_ 1623 Acc_SetCalibTarget_Z 0 "0 G" 1 "+1 G" 2 "-1 G" ;
+VAL_ 1623 Acc_StartFastCalib 0 "False" 1 "True" ;
+SIG_VALTYPE_ 1552 Rotation_X : 1;
+SIG_VALTYPE_ 1552 Rotation_Y : 1;
+SIG_VALTYPE_ 1553 Rotation_Z : 1;
+SIG_VALTYPE_ 1569 GPS_Course : 1;
+SIG_VALTYPE_ 1569 GPS_Speed : 1;
+SIG_VALTYPE_ 1570 GPS_Longitude_Minutes : 1;
+SIG_VALTYPE_ 1571 GPS_Latitude_Minutes : 1;
+SIG_VALTYPE_ 1572 GPS_Altitude : 1;
+SIG_VALTYPE_ 1573 GPS_PDOP : 1;
+SIG_VALTYPE_ 1573 GPS_HDOP : 1;
+SIG_VALTYPE_ 1574 GPS_VDOP : 1;
+
