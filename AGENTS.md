@@ -5,12 +5,12 @@ This repository is a documentation-only workspace for the FS-AI ADS-DV project. 
 ## Current Inventory
 
 - There is no application code, build system, or test suite in this repository.
-- `README.md` currently contains a migration notice and a documentation index for the Markdown set.
+- `README.md` now contains the Markdown document index, the planned release date, and guidance to raise comments or issues through the GitHub issue tracker.
 - `FS-AI ADS-DV User Manual.md` is the main draft user-facing operating document and has received the most active Markdown clean-up in this editing pass.
 - `FS-AI ADS-DV Software Interface Specification.md` is the main technical interface document and currently retains the original interface terminology used in the CAN specification.
 - `FS-AI ADS-DV Operational Safety.md` is a substantial draft safety document covering storage/access, handling/lifting, static operation, dynamic operating area requirements, and dynamic operating controls.
 - `FS-AI ADS-DV Glossary.md` is the central glossary document for shared terms and abbreviations used across the operational document set.
-- `FS-AI ADS-DV Specifications & Dimensions.md` is a structured draft hardware summary document with Document Control front matter, references, and numbered specification sections.
+- `FS-AI ADS-DV Specifications & Dimensions.md` is a structured draft hardware summary document with Document Control front matter and numbered specification sections.
 - `FS-AI ADS-DV Inspection Schedule.md` is an early draft inspection/checks document with Document Control front matter, a reduced scope focused on recurring inspection and mechanical checks, and a short preventative-maintenance section.
 - `FS-AI ADS-DV Transportation Procedures.md` is a populated transport draft covering inventory, preparation for movement, movement procedure, and transport protection/securing.
 - `FS-AI ADS-DV Risk Assessment & Method Statement.md` now contains a developed RAMS draft with a top-level TOC, related documents, a populated method statement, a risk scoring method, and populated general, static, dynamic, and transport risk assessment entries.
@@ -25,16 +25,16 @@ This repository is a documentation-only workspace for the FS-AI ADS-DV project. 
 - `FS-AI ADS-DV Software Interface Specification.md` remains one of the most developed files. It covers CAN_B messages, handshake/comms-loss behaviour, autonomous state transitions, and fault conditions, but still references an external `.dbc` file. It also intentionally retains established interface terminology such as `AI Computer`, which should not be normalised casually when editing other documents.
 - `FS-AI ADS-DV User Manual.md` is a populated draft with Document Control front matter and reformatted Markdown structure. It now distinguishes between the traction battery threshold for operation (`47.5V`) and the higher threshold used when preparing for storage (`50.0V`), treats the RES battery as part of the RES except where battery charging is described explicitly, states that the ASR must keep the RES strapped around their waist and on their person while the ADS-DV is active, and now uses `Autonomous System Master Switch (ASMS)`, `Tractive System Master Switch (TSMS)`, and `Tractive System Active Light (TSAL)` terminology consistently. It still contains publication placeholders, image placeholders, and incomplete procedural detail in some sections.
 - `FS-AI ADS-DV Operational Safety.md` is materially populated, with numbered top-level sections for Static Operation and Dynamic Operation. It now includes Dynamic Operating Area controls, Run Off Zone terminology, welfare/emergency-planning guidance, and the rule that the ASR must keep the RES strapped around their waist and on their person while the ADS-DV is active. It still includes placeholder publication metadata and should be kept aligned with Transportation Procedures where transport-related handling rules overlap.
-- `FS-AI ADS-DV Glossary.md` now centralises shared terms and abbreviations used across the operational documents. It is the preferred source for cross-document terminology such as `ADS-DV Operator`, `ASR`, `RES`, `MPP`, `TSAL`, `ASMS`, and `TSMS`, while interface-specific definitions remain local to the Software Interface Specification where required.
-- `FS-AI ADS-DV Specifications & Dimensions.md` is now a structured dimensions/specification draft with a top-level TOC, references, grouped drive/steering/battery/dimensions sections, confirmed `Lead Acid` battery chemistry, and a live CAD repository reference. It still remains a summary document rather than a full detailed design specification.
+- `FS-AI ADS-DV Glossary.md` now centralises shared terms and abbreviations used across the operational documents. It is the preferred source for cross-document terminology such as `ADS-DV Operator`, `ASR`, `RES`, `MPP`, `TSAL`, `ASMS`, and `TSMS`, while interface-specific definitions remain local to the Software Interface Specification where required. The glossary table is now alphabetical and formatted as a plain-text-friendly two-column list.
+- `FS-AI ADS-DV Specifications & Dimensions.md` is now a structured dimensions/specification draft with a top-level TOC, grouped drive/steering/battery/dimensions sections, confirmed `Lead Acid` battery chemistry, and a live CAD repository reference. It remains a summary document rather than a full detailed design specification, and it does not use a dedicated `References` section.
 - `FS-AI ADS-DV Inspection Schedule.md` is still an early draft, but it now focuses on recurring inspection and mechanical-check guidance plus basic preventative-maintenance advice rather than repeating storage, transport, or operating procedures. It still needs further development before release.
 - `FS-AI ADS-DV Transportation Procedures.md` is now a substantially rewritten numbered draft aligned to the current user manual. It requires completion of User Manual Section 7 before transport movement, uses trolley movement as the default handling method, allows on-wheel movement only where necessary, requires Brake Discharge before powered-down handling on the ADS-DV's own wheels, states that the ADS-DV is transported on its own wheels rather than on the trolleys, and now uses `Quick Lift Jack` casing consistently. It still contains photo placeholders and publication metadata placeholders.
 - `FS-AI ADS-DV Risk Assessment & Method Statement.md` now has substantive RAMS content, including a populated method statement, risk scoring, populated general, static, dynamic, and transport assessment tables, document-linked controls, consolidated activity labels, and a closing residual-risk summary. It now references the standalone glossary document for shared terminology, reflects the consolidated `ASMS`, `TSMS`, `TSAL`, and `Compute Platform` terminology used in the operational documents, and the RES-interference dynamic-operation entry has been rescored to reflect fail-safe behaviour. It still needs technical review, scoring review, and formal approval before it can be treated as final.
 - `FS-AI ADS-DV Operations Logging and Record Keeping Protocol.md` is now a structured logging draft aligned to the operational documents. It includes references, a run logging record-sheet requirement, and GEMS datalogger download guidance using a Windows PC and GEMS GDA software. It may still need further detail before release.
 - `FS-AI APC Scrutineering Process.md` now has the same structured front section style as the other controlled documents, but remains an explicit stub pending APC-specific scrutineering content.
 - `FS-AI DDT Scrutineering Process.md` now has the same structured front section style as the other controlled documents, but remains an explicit stub pending full DDT scrutineering content.
-- `README.md` remains a repository landing page rather than a fully standardized controlled document and should be treated accordingly.
-- Several documents still contain placeholders such as `2026-03-XX`, `TBD`, image placeholders, and references to external legacy PDFs; these should be treated as incomplete, not release-ready values.
+- `README.md` remains a repository landing page rather than a fully standardized controlled document and should be treated accordingly. It now includes the planned release date `2026-04-04`, a linked document index, and a GitHub issues pointer for comments or corrections.
+- Several documents still contain placeholders such as `TBD`, image placeholders, and references to external legacy PDFs; these should be treated as incomplete, not release-ready values.
 - Some files contain encoding artefacts from prior migration or copy/paste operations; preserve meaning, but clean these up deliberately when editing.
 
 ## External References
@@ -46,6 +46,7 @@ This repository is a documentation-only workspace for the FS-AI ADS-DV project. 
 
 - Preserve the current file names and top-level layout unless there is a clear reason to change them.
 - Keep documentation in Markdown.
+- Use ISO date format `YYYY-MM-DD` consistently across the documentation set, including `Document Control` tables, change logs, and release-date text.
 - Where a document includes a `## Document Control` section, keep the title, aligned table formatting, and master-copy note consistent. Format the `Changes` column to 60 characters wide.
 - Always check `Document Control` tables in plain text after editing to ensure the spacing and alignment read cleanly, not just in rendered Markdown.
 - Exception: for the RAMS, the `## Document Control` table should also include `Proposed By`, `Approved By`, and `Approved Date` columns. The `Proposed By` and `Approved By` cells should allow both a name and a role in a readable plain-text format, for example `Name / Role`.
@@ -75,9 +76,9 @@ This repository is a documentation-only workspace for the FS-AI ADS-DV project. 
 
 ## Editing Session Notes
 
-- Check that the `README.md` documentation index stays aligned with the actual repository file set.
+- Check that the `README.md` documentation index, release-date text, and GitHub issues pointer stay aligned with the current repository state.
 - Normalise repeated publication boilerplate across the Markdown documents where appropriate.
-- Resolve or clearly retain placeholders such as `2026-03-XX`, `TBD`, image placeholders, and references to external legacy PDFs.
+- Resolve or clearly retain placeholders such as `TBD`, image placeholders, and references to external legacy PDFs.
 - After section renumbering or restructuring, re-check the table of contents and heading links so they still match the body structure.
 - Where procedures are repeated across sections, compare them explicitly for drift before committing changes.
 - Review migrated text for stale year references, copied-source notes, and formatting/encoding artefacts before reusing it elsewhere.
