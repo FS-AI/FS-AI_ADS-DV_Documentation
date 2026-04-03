@@ -5,7 +5,7 @@
 
 | Version | Date       | Changes                                                      |
 | ------- | ---------- | ------------------------------------------------------------ |
-| 1.0     | 2026-04-03 | Reformatted into structured controlled-document draft.       |
+| 1.0     | 2026-04-04 | Initial version of document.                                 |
 
 > The master copy of this document is stored at [FS-AI/FS-AI_ADS-DV_Documentation](https://github.com/FS-AI/FS-AI_ADS-DV_Documentation).<br>
 > Always check you have the latest version, as printed copies, PDFs, downloads, or repository clones may be out of date.
@@ -14,11 +14,10 @@
 ## Table of Contents
 
 1. [Introduction](#1-introduction)
-2. [References](#2-references)
-3. [Drive System](#3-drive-system)
-4. [Steering System](#4-steering-system)
-5. [Traction Battery](#5-traction-battery)
-6. [Key Dimensions](#6-key-dimensions)
+2. [Drive System](#2-drive-system)
+3. [Steering System](#3-steering-system)
+4. [Traction Battery](#4-traction-battery)
+5. [Dimensions & Configuration](#5-dimensions--configuration)
 
 
 ## 1. Introduction
@@ -28,15 +27,7 @@ This document summarises the basic specifications and dimensions for the FS-AI A
 It is intended to be used alongside the current [FS-AI ADS-DV Glossary](./FS-AI%20ADS-DV%20Glossary.md), [FS-AI ADS-DV User Manual](./FS-AI%20ADS-DV%20User%20Manual.md), and [FS-AI ADS-DV Software Interface Specification](./FS-AI%20ADS-DV%20Software%20Interface%20Specification.md).
 
 
-## 2. References
-
-- [FS-AI ADS-DV Glossary](./FS-AI%20ADS-DV%20Glossary.md)
-- [FS-AI ADS-DV User Manual](./FS-AI%20ADS-DV%20User%20Manual.md)
-- [FS-AI ADS-DV Operational Safety](./FS-AI%20ADS-DV%20Operational%20Safety.md)
-- [FS-AI ADS-DV Software Interface Specification](./FS-AI%20ADS-DV%20Software%20Interface%20Specification.md)
-
-
-## 3. Drive System
+## 2. Drive System
 
 The drive-system specification is as follows:
 
@@ -48,7 +39,7 @@ The drive-system specification is as follows:
 - Maximum Electrical Power: `5kW`
 
 
-## 4. Steering System
+## 3. Steering System
 
 The steering-system specification is as follows:
 
@@ -56,7 +47,7 @@ The steering-system specification is as follows:
 - Steering Controller: `Shiftec ZE102-1`
 
 
-## 5. Traction Battery
+## 4. Traction Battery
 
 The traction-battery specification is as follows:
 
@@ -70,7 +61,7 @@ The traction-battery specification is as follows:
 - Continuous Discharge Current: `100A`
 
 
-## 6. Dimensions & Configuration
+## 5. Dimensions & Configuration
 
 The key dimensions and configuration values are as follows:
 

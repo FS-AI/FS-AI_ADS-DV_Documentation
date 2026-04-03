@@ -5,7 +5,7 @@
 
 | Version | Date       | Proposed By         | Approved By         | Approved Date | Changes                                                      |
 | ------- | ---------- | ------------------- | ------------------- | ------------- | ------------------------------------------------------------ |
-| TBD     | 2026-04-03 | Name TBD / Role TBD | Name TBD / Role TBD | TBD           | Harmonised GEMS DA3 Datalogger terminology.                  |
+| 1.0     | 2026-04-04 | Name TBD / Role TBD | Name TBD / Role TBD | TBD           | Initial version of document.                                 |
 
 > The master copy of this document is stored at [FS-AI/FS-AI_ADS-DV_Documentation](https://github.com/FS-AI/FS-AI_ADS-DV_Documentation).<br>
 > Always check you have the latest version, as printed copies, PDFs, downloads, or repository clones may be out of date.
@@ -28,9 +28,9 @@ This RAMS should be used in conjunction with the related documents listed below.
 
 > **Note:** The primary purpose of this RAMS is to minimise the risk of injury to persons. A further effect is the minimisation of the risk of damage to the ADS-DV and to other property. It may therefore support the demonstration of risk controls when seeking favourable insurance terms. A thorough review of all relevant insurance cover, conditions, and exclusions is recommended before any operation commences.
 
-> **Note:** This RAMS does not replace any RAMS, permit, local rule, or other safety procedure required by the organisation, venue, or ADS-DV Operator. It may instead be used as a complementary measure alongside those requirements.
+> **Note:** This RAMS does not replace any RAMS, permit, local rule, or other safety procedure(s) required by a 3rd party organisation, operating venue, or the ADS-DV Operator. It may instead be used as a complementary measure alongside those requirements.
 
-> **Note:** It is recommended that specific copy of this RAMS, together with any other documents required by the organisation, venue, or ADS-DV Operator, be archived before each ADS-DV operation as a permanent record of the controls in place during said operation.
+> **Note:** It is recommended that specific copy of this RAMS, together with any other documents required by a 3rd party organisation, operating venue, or the ADS-DV Operator, be archived before each ADS-DV operation as a permanent record of the controls in place during said operation.
 
 
 ## 2. Related Documents
@@ -96,7 +96,7 @@ The initial Severity, Likelihood, and Risk columns represent the hazard before c
 
 ### 5.1. Risk Scoring Method
 
-Use the following generic scoring method unless a different approved scoring system is specified for the activity. Risk score is calculated as:
+Use the following generic scoring method unless a different approved scoring system is specified by e.g. a 3rd party. Risk score is calculated as:
 
 `Risk Score = Severity x Likelihood`
 

@@ -5,7 +5,7 @@
 
 | Version | Date       | Changes                                                      |
 | ------- | ---------- | ------------------------------------------------------------ |
-| 1.0     | 2026-04-03 | Harmonised GEMS DA3 Datalogger terminology.                  |
+| 1.0     | 2026-04-04 | Initial version of document.                                 |
 
 > The master copy of this document is stored at [FS-AI/FS-AI_ADS-DV_Documentation](https://github.com/FS-AI/FS-AI_ADS-DV_Documentation).<br>
 > Always check you have the latest version, as printed copies, PDFs, downloads, or repository clones may be out of date.
@@ -61,7 +61,7 @@ Where multiple runs are carried out in one session, the record must still identi
 
 ## 5. GEMS Datalogger Data Management
 
-The ADS-DV uses a GEMS DA3 Datalogger Memory Card to record run data during operation.
+The ADS-DV uses a GEMS DA3 Datalogger with a Memory Card to record run data during operation.
 
 The GEMS DA3 Datalogger memory must be managed so that sufficient storage capacity remains available for continued operation.
 

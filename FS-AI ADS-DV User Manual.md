@@ -5,7 +5,7 @@
 
 | Version | Date       | Changes                                                      |
 | ------- | ---------- | ------------------------------------------------------------ |
-| 1.0     | 2026-03-XX | Harmonised GEMS DA3 Datalogger terminology.              |
+| 1.0     | 2026-04-04 | Initial version of document.                                 |
 
 > The master copy of this document is stored at [FS-AI/FS-AI_ADS-DV_Documentation](https://github.com/FS-AI/FS-AI_ADS-DV_Documentation).<br>
 > Always check you have the latest version, as printed copies, PDFs, downloads, or repository clones may be out of date.
@@ -93,7 +93,7 @@ Refer to [FS-AI ADS-DV Inspection Schedule](./FS-AI%20ADS-DV%20Inspection%20Sche
 1. Verify the AI Power Switch is switched "Off".
 2. Connect the MPP Dongle to the MPP.
 3. Ensure the RES has a charged battery installed.
-4. Enable the RES by twisting the RES Emergency Stop button until it pops up.
+4. Enable the RES by twisting the RES Emergency Stop button clockwise until it pops up.
 5. Verify the RES is active by observing the Red LED is lit.
 
    *Photo to be added.*
@@ -243,7 +243,7 @@ The ADS-DV should be prepared for storage any time it is left unattended.
    > **Note:** Ensure the AI Power Switch is switched "Off" even if no Compute Platform is installed.
 
 5. Ensure the RES has a charged battery installed.
-6. Enable the RES by twisting the Emergency Stop button until it pops up.
+6. Enable the RES by twisting the Emergency Stop button clockwise until it pops up.
 7. Verify the RES is active by observing the Red LED is lit.
 
    > **Note:** The RES Red LED will flash if the battery is low on charge. It may also emit an audible tone. If this occurs, fit a charged battery and recharge the flat battery using the provided RES Battery Charger.
@@ -309,7 +309,7 @@ The ADS-DV should be prepared for storage any time it is left unattended.
 
 3. Connect the MPP Dongle to the MPP.
 4. Ensure the RES has a charged battery installed.
-5. Enable the RES by twisting the Emergency Stop button until it pops up.
+5. Enable the RES by twisting the Emergency Stop button clockwise until it pops up.
 6. Verify the RES is active by observing the Red LED is lit.
 
    > **Note:** The RES Red LED will flash if the battery is low on charge. It may also emit an audible tone. If this occurs, fit a charged battery and recharge the flat battery using the provided RES Battery Charger.

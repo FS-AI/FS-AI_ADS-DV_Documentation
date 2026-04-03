@@ -5,7 +5,7 @@
 
 | Version | Date       | Changes                                                      |
 | ------- | ---------- | ------------------------------------------------------------ |
-| 1.0     | 2026-03-XX | Harmonised GEMS DA3 Datalogger terminology.                  |
+| 1.0     | 2026-04-04 | Initial version of document.                                 |
 
 > The master copy of this document is stored at [FS-AI/FS-AI_ADS-DV_Documentation](https://github.com/FS-AI/FS-AI_ADS-DV_Documentation).<br>
 > Always check you have the latest version, as printed copies, PDFs, downloads, or repository clones may be out of date.
@@ -142,6 +142,7 @@ The ADS-DV is not fully waterproof, especially the InCarPC. Therefore, ADS-DV op
 - No standing water or puddles must be present.
 - The ADS-DV must be dried down if it gets significantly wet, and WD40 applied by cloth to exposed metallic areas to prevent corrosion, except for the brake discs and brake pads.
 - The InCarPC must be regularly inspected for water. If any water is present on or around the InCarPC, operation must be stopped until conditions dry out.
+- Use of plastic sheeting is recommended to protect the InCarPC from water (not provided).
 
 > **Note:** It is not permitted to operate the ADS-DV in ice or snow conditions.
 

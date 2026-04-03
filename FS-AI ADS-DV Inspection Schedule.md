@@ -3,9 +3,9 @@
 
 ## Document Control
 
-| Version | Date       | Changes                  |
-| ------- | ---------- | ------------------------ |
-| 1.0     | 2026-03-XX | Added glossary reference and updated terminology.      |
+| Version | Date       | Changes                                                      |
+| ------- | ---------- | ------------------------------------------------------------ |
+| 1.0     | 2026-04-04 | Initial version of document.                                 |
 
 > The master copy of this document is stored at [FS-AI/FS-AI_ADS-DV_Documentation](https://github.com/FS-AI/FS-AI_ADS-DV_Documentation).<br>
 > Always check you have the latest version, as printed copies, PDFs, downloads, or repository clones may be out of date.
@@ -78,7 +78,7 @@ The following components should not be removed and / or refitted without consult
 
 In addition to the inspection checks above, the ADS-DV should receive basic preventative maintenance attention during periods of low use or storage.
 
-- At least once every week, the ADS-DV should be turned on for at least 15 minutes so that the LV Battery can be recharged from the Traction Battery through the DC/DC converter.
+- At least once every week, the ADS-DV should be turned on for at least 15 minutes so that the LV Battery can be recharged from the Traction Battery through the DCDC converter.
 - If the Traction Battery voltage is below 50.0V, recharge the Traction Battery according to [FS-AI ADS-DV User Manual, Section 8](./FS-AI%20ADS-DV%20User%20Manual.md#8-charging-the-traction-battery).
 - Follow the current [FS-AI ADS-DV User Manual](./FS-AI%20ADS-DV%20User%20Manual.md) for the detailed safe procedure to energise and shut down the ADS-DV when carrying out this preventative maintenance.
 

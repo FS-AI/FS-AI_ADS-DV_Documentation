@@ -3,9 +3,9 @@
 
 ## Document Control
 
-| Version | Date        | Changes                                                         |
-| ------- | ----------- | --------------------------------------------------------------- |
-| 4.0     | 25 Jun 2021 | Current issue. See [Change Log](#change-log) below for full revision history. |
+| Version | Date       | Changes                                                      |
+| ------- | ---------- | ------------------------------------------------------------ |
+| 1.0     | 2026-04-04 | Initial version of document.                                 |
 
 > The master copy of this document is stored at [FS-AI/FS-AI_ADS-DV_Documentation](https://github.com/FS-AI/FS-AI_ADS-DV_Documentation).<br>
 > Always check you have the latest version, as printed copies, PDFs, downloads, or repository clones may be out of date.
@@ -39,10 +39,10 @@ This CAN interface has been designed to comply with the 2019 Formula Student Rul
 
 | Version | Date | Changes made |
 | --- | --- | --- |
-| 0.2 | 24 Oct 2018 | First release |
-| 2.0 | 21 May 2019 | CAN DBC database file name added,<br><br>Drive motor torque interface simplified: axle torque request signals changed to unsigned \[0-195 Nm\],<br><br>Minimum axle torque feedback signals removed (FRONT_AXLE_TRQ_MIN_Nm & REAR_AXLE_TRQ_MIN_Nm),<br><br>List of implausible operating conditions added,<br><br>'Manual' option for AMI state removed. |
-| 3.0 | 27 Jan 2021 | Friction braking messages (AI2VCU_Brake and VCU2AI_Brake) updated to allow independent variation of brake pressure requests for the front and rear axles,<br><br>steering angle limits revised to ±24.0°,<br><br>battery charging procedure and BMS faults added to VCU2AI_Status fault diagnostics,<br><br>AMI_STATE enumerations updated to include new 'Static inspection A', 'Static inspection B' and 'Autonomous demo' missions for scrutineering,<br><br>Unused VCU diagnostics messages removed,<br><br>List of reserved CAN IDs updated. |
-| 4.0 | 25 Jun 2021 | CAN specifications updated to included altered message DLC values and transmission rates,<br><br>VCU_STATUS message added to CAN specification,<br><br>handshake and CAN message timeout error information updated,<br><br>list of fault conditions in autonomous driving mode added,<br><br>list of reserved CAN IDs updated. |
+| 0.2 | 2018-10-24 | First release |
+| 2.0 | 2019-05-21 | CAN DBC database file name added,<br><br>Drive motor torque interface simplified: axle torque request signals changed to unsigned \[0-195 Nm\],<br><br>Minimum axle torque feedback signals removed (FRONT_AXLE_TRQ_MIN_Nm & REAR_AXLE_TRQ_MIN_Nm),<br><br>List of implausible operating conditions added,<br><br>'Manual' option for AMI state removed. |
+| 3.0 | 2021-01-27 | Friction braking messages (AI2VCU_Brake and VCU2AI_Brake) updated to allow independent variation of brake pressure requests for the front and rear axles,<br><br>steering angle limits revised to ±24.0°,<br><br>battery charging procedure and BMS faults added to VCU2AI_Status fault diagnostics,<br><br>AMI_STATE enumerations updated to include new 'Static inspection A', 'Static inspection B' and 'Autonomous demo' missions for scrutineering,<br><br>Unused VCU diagnostics messages removed,<br><br>List of reserved CAN IDs updated. |
+| 4.0 | 2021-06-25 | CAN specifications updated to included altered message DLC values and transmission rates,<br><br>VCU_STATUS message added to CAN specification,<br><br>handshake and CAN message timeout error information updated,<br><br>list of fault conditions in autonomous driving mode added,<br><br>list of reserved CAN IDs updated. |
 
 
 
