@@ -6,6 +6,7 @@
 | Version | Date       | Proposed By         | Approved By         | Approved Date | Changes                                                      |
 | ------- | ---------- | ------------------- | ------------------- | ------------- | ------------------------------------------------------------ |
 | 1.0     | 2026-04-04 | Name TBD / Role TBD | Name TBD / Role TBD | TBD           | Initial version of document.                                 |
+| 1.0.1   | 2026-04-05 | Name TBD / Role TBD | Name TBD / Role TBD | TBD           | Improved wording of primary mitigation statement.            |
 
 > The master copy of this document is stored at [FS-AI/FS-AI_ADS-DV_Documentation](https://github.com/FS-AI/FS-AI_ADS-DV_Documentation).<br>
 > Always check you have the latest version, as printed copies, PDFs, downloads, or repository clones may be out of date.
@@ -195,4 +196,4 @@ This sub-section covers hazards associated with preparing the ADS-DV for transpo
 
 > **Note:** The highest residual risk identified in this RAMS is the manual handling involved in placing the ADS-DV on and off the Skateboard Trolleys, or otherwise transitioning it between the trolleys and its wheels, which retains a residual score of `8 (Moderate)`.
 
-> **Note:** For any uncontrolled or runaway ADS-DV movement during Dynamic Operation, the primary mitigation is immediate intervention by the ASR using the RES. This is backed up by the fail-safe engineering of the RES + Emergency Braking System which defaults to the Safe State of Brakes "On" and Traction System "Off" upon any fault.
+> **Note:** For any uncontrolled or runaway ADS-DV movement during Dynamic Operation, the primary mitigation is immediate activation of the Emergency Braking System (EBS) by the ASR using the RES, bringing the ADS-DV to an immediate halt. This is backed up by the fail-safe engineering of the RES + EBS which defaults to the Safe State of Brakes "On" and Traction System "Off" upon any relevant fault within the ADS-DV itself.

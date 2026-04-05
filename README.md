@@ -23,3 +23,5 @@ Comments, corrections, and issues should be raised through the [GitHub Issues](h
 11. [FS-AI APC Scrutineering Process](./FS-AI%20APC%20Scrutineering%20Process.md)
 
 > **Note:** Many documents are currently awaiting the addition of suitable photos or diagrams. These will be added as soon as possible.
+
+These documents have been formatted to view best in either Visual Studio Code Preview (offline for a cloned repo) or using the [MarkView](https://chromewebstore.google.com/detail/markview-markdown-viewer/cfopbpknalachedpcddhgbgjoigklien) Chrome Extension (online at GitHub - choose Raw view) using the Wide viewing mode. The MarkView extension is also recommended for PDF export - render in Chrome and use the 'Save to PDF' Print option (Ctrl+P).
