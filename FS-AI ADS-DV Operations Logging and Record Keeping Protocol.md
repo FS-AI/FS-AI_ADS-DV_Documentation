@@ -50,13 +50,11 @@ In particular:
 
 ## 4. Run Logging Record Sheet
 
-A run logging record sheet will be provided with the ADS-DV or made available online.
-
-> **Note:** The run logging record sheet must be completed whenever an ADS-DV run or logged operating session is carried out.
-
-The record sheet should be completed clearly and retained as part of the operation record for the ADS-DV Operator.
+A Run Logging Record Sheet should be completed clearly and retained as part of the operation record for the ADS-DV Operator.
 
 Where multiple runs are carried out in one session, the record must still identify each run clearly and any relevant anomaly, interruption, or abnormal outcome must be recorded.
+
+> **Note:** The run logging record sheet will be provided with the ADS-DV or made available online. It must be completed by the ASR whenever the ADS-DV is operated.
 
 
 ## 5. GEMS Datalogger Data Management

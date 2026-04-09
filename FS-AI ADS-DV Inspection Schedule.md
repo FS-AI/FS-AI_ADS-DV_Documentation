@@ -45,7 +45,7 @@ The ADS-DV Operator must conduct basic maintenance checks on the ADS-DV on the f
 
 These basic checks must be performed (or supervised) by competent, trained, or experienced personnel such as mechanical workshop technicians, automotive technicians, or other engineering-trained personnel.
 
-> **Note:** An inspection record sheet will be provided with the ADS-DV or made available online. It must be completed whenever an inspection is carried out.
+> **Note:** An Inspection Record Sheet will be provided with the ADS-DV or made available online. It must be completed whenever an inspection is carried out.
 
 
 ## 4. Mechanical Checks & Faults
