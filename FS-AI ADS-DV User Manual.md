@@ -39,20 +39,46 @@ The key equipment for operating the ADS-DV consists of:
 
 - ADS-DV
 - Remote Emergency Stop (RES)
-- Red Switch Keys (x3)
+
+![image](images/ADS-DV_RES_Top_View.jpg)
+
+- Red Switch Keys (x3 + 1 spare)
+
+![image](images/ADS-DV_Switch_Keys.png)
+
 - MPP Dongle
+
+>[image to be added](images)
+
 - GEMS DA3 Datalogger Memory Card
+
+>[image to be added](images)
+
 - Traction Battery Charger
+
+>[image to be added](images)
+
 - RES Battery Charger
+
+![image](images/ADS-DV_RES_Battery_Charger.jpg)
 
 > **Note:** The ADS-DV may be provided with additional items not listed above. This is not a complete inventory. These may include:
 >
 > - Quick Lift Jack
+>
+>![image](images/ADS-DV_Quick_Lift_Jack_Lowered.jpg)
+>
 > - Skateboard Trolleys (x2)
+>
+>>[image to be added](images)
+>
 > - Plastic Ramps
+>
+>![image](images/ADS-DV_Loading_Ramps_4.jpg)
+>
 > - Spares
 
-*Photos to be added.*
+>[image to be added](images)
 
 
 ## 3. User Interface
@@ -61,14 +87,32 @@ The key elements of the ADS-DV user interface are:
 
 - Red Switch Keys (x3)
 - Remote Emergency Stop (RES)
+
+![image](images/ADS-DV_RES_Top_View.jpg)
+
 - Side Emergency Stop Switches (x2)
+
+>[image to be added](images)
+
 - AI Power Switch
+
+>[image to be added](images)
+
 - Multi-Purpose Port (MPP) and MPP Dongle
+
+>[image to be added](images)
+
 - Charger Port
+
+>[image to be added](images)
+
 - Tractive System Active Light (TSAL) LED Indicators
+
+>[image to be added](images)
+
 - Touch Screen Interface
 
-*Photos to be added.*
+>[image to be added](images)
 
 
 ## 4. Inspection
@@ -92,11 +136,14 @@ Refer to [FS-AI ADS-DV Inspection Schedule](./FS-AI%20ADS-DV%20Inspection%20Sche
 
 1. Verify the AI Power Switch is switched "Off".
 2. Connect the MPP Dongle to the MPP.
+
+![image](images/ADS-DV_MPP_Dongle_Inserted.jpg)
+
 3. Ensure the RES has a charged battery installed.
 4. Enable the RES by twisting the RES Emergency Stop button clockwise until it pops up.
-5. Verify the RES is active by observing the Red LED is lit.
+5. Verify the RES is active by observing the Status LED is lit Red.
 
-   *Photo to be added.*
+![image](images/ADS-DV_RES_Annotated.jpg)
 
    > **Note:** The RES Red LED will flash if the battery is low on charge. It may also emit an audible tone. If this occurs, fit a charged battery and recharge the flat battery using the provided RES Battery Charger.
 
@@ -108,7 +155,7 @@ Refer to [FS-AI ADS-DV Inspection Schedule](./FS-AI%20ADS-DV%20Inspection%20Sche
 9. Verify the Touch Screen Interface starts up.
 10. Verify the E-Stop Loop indicator on the Touch Screen shows "Green".
 
-    *Photo to be added.*
+>[image to be added](images)
 
     > **Note:** To complete the E-Stop Loop all the following need to be correct:
     >
@@ -121,11 +168,9 @@ Refer to [FS-AI ADS-DV Inspection Schedule](./FS-AI%20ADS-DV%20Inspection%20Sche
 
     > **Note:** If the LV Battery voltage remains below 13.0V, turn off the LV Master Switch and contact FS-AI Technical Support.
 
-    *Photo to be added.*
-
 12. Verify the Traction Battery voltage is above 47.5V. If it is lower than this, do not operate the vehicle. Instead, charge the Traction Battery according to the procedure below.
 
-    *Photo to be added.*
+>[image to be added](images)
 
 13. Verify the status of the ADS-DV systems on the Touch Screen as follows:
 
@@ -134,7 +179,7 @@ Refer to [FS-AI ADS-DV Inspection Schedule](./FS-AI%20ADS-DV%20Inspection%20Sche
     - "TS Init"
     - "EBS Init"
 
-    *Photo to be added.*
+>[image to be added](images)
 
 Assuming the above is all correct, the ADS-DV is now ready for Autonomous Operation.
 
@@ -161,16 +206,13 @@ Autonomous Operation of the ADS-DV requires the presence of valid CAN signals fr
 2. Verify the Compute Platform is connected to one of the AI Power and CAN connectors of the ADS-DV.
 3. Turn on the AI Power Switch, or confirm it is already on, to supply power to the Compute Platform.
 
-   *Photos to be added.*
+>[image to be added](images)
 
 4. Turn on the LV Master Switch, or confirm it is already on.
 
-   *Photo to be added.*
+![image](images/ADS-DV_Side_Switches.png)
 
 5. Turn "On" the Autonomous System Master Switch (ASMS) and turn "On" the Tractive System Master Switch (TSMS).
-
-   *Photo to be added.*
-
 6. Ensure the Compute Platform is sending CAN signals to the ADS-DV.
 
    > **Note:** As soon as valid CAN signals are received by the ADS-DV, the Tractive System and Emergency Brake System will activate.
@@ -182,29 +224,27 @@ Autonomous Operation of the ADS-DV requires the presence of valid CAN signals fr
 
 9. Wait for the Autonomous System to progress from "AS Init" to "AS Off".
 
-   *Photo to be added.*
+>[image to be added](images)
 
 10. Insert the GEMS DA3 Datalogger Memory Card, or confirm insertion, and verify that the two LEDs are both showing "Green".
 
-    *Photo to be added.*
+>[image to be added](images)
 
 11. Select a Mission using the Touch Screen drop-down and press "Set".
 
-    *Photo to be added.*
+>[image to be added](images)
 
 12. Wait for the Autonomous System to progress from "AS Off" to "AS Ready", indicated on the Touch Screen and also by the TSAL Indicator LEDs showing "Red" and "Yellow".
 
-    *Photo to be added.*
+>[image to be added](images)
 
 13. Wait for the TSAL Indicator LEDs to flash "Blue" as well as show "Red" and "Yellow", indicating the 5 second timer has elapsed. This 5 second timer is to allow the ASR to move away from the vehicle.
-
-    *Photo to be added.*
 
     > **Note:** The Autonomous State Machine CAN signal requirements are documented in [FS-AI ADS-DV Software Interface Specification](./FS-AI%20ADS-DV%20Software%20Interface%20Specification.md). The ADS-DV will not progress from "AS Off" to "AS Ready", or from "AS Ready" to "AS Driving", if these requirements are not strictly followed.
 
 14. Activate the RES "Go" switch by toggling it from "0" to "1". This will transition the Autonomous System from "AS Ready" to "AS Driving".
 
-    *Photo to be added.*
+>[image to be added](images)
 
 15. The Compute Platform should conduct the Mission by correctly controlling the ADS-DV using the CAN signals.
 
@@ -268,7 +308,7 @@ The ADS-DV should be prepared for storage any time it is left unattended.
 14. Verify the Traction Battery voltage is above 50.0V. If it is lower than this, charge the Traction Battery to at least 50.0V according to the procedure below.
 15. On the Touch Screen, switch to the "Service" page and press the "Brake Discharge" switch. Ensure the switch shows "On".
 
-    *Photo to be added.*
+>[image to be added](images)
 
 16. Verify the Emergency Brake System is discharging by observing the two Brake Pressures on the Touch Screen. These will deplete as the Emergency Brake System is pulsed on and off. This may be audible at first but will usually go quiet before the brakes are fully discharged.
 
@@ -293,8 +333,6 @@ The ADS-DV should be prepared for storage any time it is left unattended.
 - Red Switch Key (x1)
 - Traction Battery Charger
 
-*Photo to be added.*
-
 ### 8.2. Procedure
 
 1. Ensure the Traction Battery Charger is unplugged from the mains and the Power Switch on the rear of the Traction Battery Charger is set to "0" (Off).
@@ -305,9 +343,9 @@ The ADS-DV should be prepared for storage any time it is left unattended.
 
    > **Note:** Ensure the Traction Battery Charger Output Connector is fully engaged and the Red latch is pushed forward.
 
-   *Photo to be added.*
+![image](images/ADS-DV_Charger_Plug_Latched.jpg)
 
-3. Connect the MPP Dongle to the MPP.
+3. Connect the MPP Dongle to the MPP, or verify it is already connected.
 4. Ensure the RES has a charged battery installed.
 5. Enable the RES by twisting the Emergency Stop button clockwise until it pops up.
 6. Verify the RES is active by observing the Red LED is lit.
@@ -333,26 +371,29 @@ The ADS-DV should be prepared for storage any time it is left unattended.
 
 13. On the Touch Screen, switch to the "Service" page and press the "Charge Enable" switch. Ensure the switch shows "On".
 
-    *Photos to be added.*
+>[image to be added](images)
 
 14. Plug the Traction Battery Charger into the mains.
 15. Turn the Power Switch on the rear of the Traction Battery Charger to "1" (On).
 
-    *Photo to be added.*
+![image](images/ADS-DV_Charger_Switch_On.jpg)
 
 16. Verify that the LED on the Traction Battery Charger shows "Orange", or "Green", but not "Red". If not, or if charging does not start, cycle the Power Switch on the rear of the Traction Battery Charger from "1" to "0" and back to "1".
 
-    *Photo to be added.*
+![image](images/ADS-DV_Charger_Orange_Charging_Light.jpg)
 
 17. Verify on the Touch Screen that the Traction Battery voltage increases and the current goes negative, showing current is flowing to the Traction Battery.
 
-    *Photo to be added.*
+>[image to be added](images)
 
     > **Note:** Depending on the state of charge the current will vary from -25.0A to approximately -2.0A, while the Traction Battery voltage will vary from approximately 52.0V to approximately 58.0V.
 
     > **Note:** The Traction Battery charge may be terminated at any time, but it is recommended to wait until the current is lower than 5.0A and/or the voltage is higher than 56.0V.
 
 18. Turn the Power Switch on the rear of the Traction Battery Charger to "0" (Off).
+
+![image](images/ADS-DV_Charger_Switch_Off.jpg)
+
 19. Unplug the Traction Battery Charger from the mains.
 20. Turn "Off" the LV Master Switch.
 21. Turn "Off" the RES by pressing in the Emergency Stop button and observing the Red LED is unlit.
@@ -360,7 +401,8 @@ The ADS-DV should be prepared for storage any time it is left unattended.
 
     > **Note:** First pull the Red latch rearwards, then depress both the Orange latch tabs before pulling the Charger Output Connector off the Charge Port. Otherwise, connector damage may occur.
 
-    *Photos will be added.*
+>[image to be added](images)
+>[image to be added](images)
 
 23. Store the Traction Battery Charger safely and securely to avoid damage.
 
@@ -372,9 +414,12 @@ The ADS-DV should be prepared for storage any time it is left unattended.
 ### 9.1. Procedure
 
 1. Remove the Front Bodywork Panel.
+
+![image](images/ADS-DV_Inertia_Switch_Access.jpg)
+
 2. Locate the Inertia Switch.
 
-   *Photo to be added.*
+![image](images/ADS-DV_Inertia_Switch.jpg)
 
 3. Press the Inertia Switch down - if there is a 'click' the switch had triggered and is now reset.
 4. Verify the E-Stop Loop indicator on the Touch Screen now shows "Green".
@@ -388,7 +433,7 @@ The ADS-DV should be prepared for storage any time it is left unattended.
 - RES Battery Charger
 - RES Battery Charger Power Adapter
 
-*Photo to be added.*
+![image](images/ADS-DV_RES_Battery_Charging.jpg)
 
 ### 10.2. Procedure
 
@@ -396,7 +441,7 @@ The ADS-DV should be prepared for storage any time it is left unattended.
 2. Insert the RES Battery into the RES Battery Charger, the 2nd LED should light up "Yellow".
 3. When the RES Battery is charged, the 2nd LED will turn "Green".
 
-*Photo to be added.*
+![image](images/ADS-DV_RES_Battery_Charged.jpg)
 
 
 ## 11. Support Contacts
