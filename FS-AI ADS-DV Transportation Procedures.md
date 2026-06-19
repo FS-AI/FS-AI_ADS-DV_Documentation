@@ -44,7 +44,7 @@ The following equipment and accessories must accompany the ADS-DV during transpo
 
 - MPP Dongle.
 
->[image to be added](images)
+![image](images/ADS-DV_MPP_Dongle.jpg)
 
 - Set of four black plastic ramps.
 
@@ -60,7 +60,7 @@ The following equipment and accessories must accompany the ADS-DV during transpo
 
 - Pushbar.
 
->[image to be added](images)
+![image](images/ADS-DV_Pushbar.jpg)
 
 In the event of loss or damage to any of this transport inventory, immediately inform the IMechE Formula Student Office and IMechE Formula Student AI Technical Support, as contingency procedures may be required.
 
